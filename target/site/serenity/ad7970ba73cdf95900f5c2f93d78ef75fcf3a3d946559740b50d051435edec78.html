@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Test quotable api with various pathparam</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<!-- ImgPreview -->
+<script src="scripts/imgpreview.full.jquery.js" type="text/javascript"></script>
+</head>
+
+<body class="results-page">
+
+
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+        <span class="breadcrumbs">
+            <a href="index.html" class="breadcrumbs">Home</a>
+
+            > <a href="1a5d6d3e85a35c05f2cfac74589f213e300af262b95c124b6d4b044d916d2d34.html">QuotableAPI - Automation</a>
+        > Test quotable api with various pathparam
+        </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 03-07-2021 13:31</span>
+    <br style="clear:left"/>
+</div>
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                                <div>
+                                    <h3 class="discreet-story-header">
+                                        <i class="fa fa-2x fa-comments-o"></i>
+                                        <span class="story-header-title">QuotableAPI - Automation </span>
+                                    </h3>
+
+                                </div>
+
+                        </td>
+                        <td valign="top">
+                                <p class="tag">
+                                    <span class="badge tag-badge" style="background:default;">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;"
+                                                                      href="394153f99e83a49d179da05f10679886fc14a1fab8d82c35a996722199ffb002.html">Quotableapiwithpathparameters
+                                    (tag)</a>
+                                </span>
+                                </p>
+                                <p class="tag">
+                                    <span class="badge tag-badge" style="background:default;">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;"
+                                                                      href="6d85168daabd43a5b0b7b0a22defcb224598ac599fe055f272aec8e08d5c8d54.html">Quotableapi
+                                    (tag)</a>
+                                </span>
+                                </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">
+                                    Test quotable api with various pathparam
+                                        <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+        <div class="story-title">
+            <h3 class="story-header">Scenario Outline</h3>
+
+            <div class="scenario">Given A call to quotable api with pathparm "&lt;pathparam&gt;"<br>When response code is "200"<br>Then validate the total count "&lt;totalCount&gt;"</div>
+
+        </div>
+
+    <div id="beforetable"></div>
+
+
+            <h3 class="story-header">Examples:&nbsp;</h3>
+                <div class="requirementNarrative"></div>
+
+
+                <p class="example-tag">
+                </p>
+
+            <div class="example-table test-report">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                            <th>Pathparam</th>
+                            <th>Total Count</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="test-SUCCESS"><a href="#0">1</a></td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">quotes</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">1885</a>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td class="test-SUCCESS"><a href="#1">2</a></td>
+                                <td class="test-SUCCESS"><a
+                                            href="#1">authors</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#1">700</a>
+                                </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+    <div id="tablecontents">
+        <div>
+            <table class="step-table">
+                <tr class="step-titles">
+                    <th width="65">
+                    </th>
+                    <th class="step-description-column greentext">
+                        Steps
+                    </th>
+
+                    <th width="130" class="greentext">Outcome</th>
+                    <th width="100" class="greentext"><i title="Duration" class="far fa-clock"></i></th>
+                </tr>
+                <tr class="step-table-separator">
+                    <td colspan="5"></td>
+                </tr>
+
+                    <tr class="test-SUCCESS">
+
+                        <td width="50" class="step-icon">
+                            <a name="0"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection0 success-icon"
+                                       style="margin-left: 20px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                                   style="display:block;">
+                                    <span class="top-level-step">
+                                                1: Test quotable api with various pathparam ({pathparam=quotes, totalCount=1885})
+                                        </span>
+                                </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                        <td width="100"><span class="top-level-step">7.27s</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection0" class="step-table-nested" style="display:none;">
+
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="0-0"></a>
+                                <span style="margin-left: 40px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                Given the api is composed of "https://api.quotable.io/"
+                                        </span>
+                                <span class="evidence">
+                                            <span class="piece-of-evidence">
+                <a name="report-data-1ed99eaa-5e1b-4065-abd4-4d007f7fdfca"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-2-0">
+                        BaseURI
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-2-0" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                BaseURI
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>https://api.quotable.io/</pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">1.3s</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="0-1"></a>
+                                <span style="margin-left: 40px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                Given A call to quotable api with pathparm "quotes"
+                                        </span>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">4.63s</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="0-2"></a>
+                                <span style="margin-left: 40px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                When response code is "200"
+                                        </span>
+                                <span class="evidence">
+                                            <span class="piece-of-evidence">
+                <a name="report-data-e0640492-cfae-4edf-a777-4cb9810808e5"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-4-0">
+                        Response Body with status code : 200
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-4-0" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Response Body with status code : 200
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>{<br>    &quot;count&quot;: 20,<br>    &quot;totalCount&quot;: 1885,<br>    &quot;page&quot;: 1,<br>    &quot;totalPages&quot;: 95,<br>    &quot;lastItemIndex&quot;: 20,<br>    &quot;results&quot;: [<br>        {<br>            &quot;tags&quot;: [<br>                &quot;famous-quotes&quot;,<br>                &quot;inspirational&quot;<br>            ],<br>            &quot;_id&quot;: &quot;2xpHvSOQMD&quot;,<br>            &quot;author&quot;: &quot;Helmut Schmidt&quot;,<br>            &quot;content&quot;: &quot;The biggest room in the world is room for improvement.&quot;,<br>            &quot;authorSlug&quot;: &quot;helmut-schmidt&quot;,<br>            &quot;length&quot;: 54,<br>            &quot;dateAdded&quot;: &quot;2021-06-18&quot;,<br>            &quot;dateModified&quot;: &quot;2021-06-18&quot;<br>        },<br>        {<br>            &quot;tags&quot;: [<br>                &quot;famous-quotes&quot;,<br>                &quot;inspirational&quot;<br>            ],<br>            &quot;_id&quot;: &quot;HMBEfGB94i&quot;,<br>            &quot;author&quot;: &quot;Henry Ford&quot;,<br>            &quot;content&quot;: &quot;Whether you think you can or you think you can't, you are right.&quot;,<br>            &quot;authorSlug&quot;: &quot;henry-ford&quot;,<br>            &quot;length&quot;: 64,<br>            &quot;dateAdded&quot;: &quot;2021-06-18&quot;,<br>            &quot;dateModified&quot;: &quot;2021-06-18&quot;<br>        },<br>        {<br>            &quot;tags&quot;: [<br>                &quot;famous-quotes&quot;,<br>                &quot;inspirational&quot;<br>            ],<br>            &quot;_id&quot;: &quot;lJ60rOYWci&quot;,<br>            &quot;author&quot;: &quot;Neil Gaiman&quot;,<br>            &quot;content&quot;: &quot;The one thing that you have that nobody else has is you. Your voice, your mind, your story, your vision. So write and draw and build and play and dance and live as only you can.&quot;,<br>            &quot;authorSlug&quot;: &quot;neil-gaiman&quot;,<br>            &quot;length&quot;: 177,<br>            &quot;dateAdded&quot;: &quot;2021-06-18&quot;,<br>            &quot;dateModified&quot;: &quot;2021-06-18&quot;<br>        },<br>        {<br>            &quot;tags&quot;: [<br>                &quot;famous-quotes&quot;,<br>                &quot;inspirational&quot;<br>            ],<br>            &quot;_id&quot;: &quot;XNLGqepInX&quot;,<br>            &quot;author&quot;: &quot;Amy Poehler&quot;,<br>            &quot;content&quot;: &quot;There’s power in looking silly and not caring that you do.&quot;,<br>            &quot;authorSlug&quot;: &quot;amy-poehler&quot;,<br>            &quot;length&quot;: 58,<br>            &quot;dateAdded&quot;: &quot;2021-06-18&quot;,<br>            &quot;dateModified&quot;: &quot;2021-06-18&quot;<br>        },<br>        {<br>            &quot;tags&quot;: [<br>                &quot;famous-quotes&quot;,<br>                &quot;inspirational&quot;<br>            ],<br>            &quot;_id&quot;: &quot;aEPNVog6sT&quot;,<br>            &quot;author&quot;: &quot;Eric Hoffer&quot;,<br>            &quot;content&quot;: &quot;In times of change, learners inherit the earth, while the learned find themselves beautifully equipped to deal with a world that no longer exists.&quot;,<br>            &quot;authorSlug&quot;: &quot;eric-hoffer&quot;,<br>            &quot;length&quot;: 146,<br>            &quot;dateAdded&quot;: &quot;2021-06-18&quot;,<br>            &quot;dateModified&quot;: &quot;2021-06-18&quot;<br>        },<br>        {<br>            &quot;tags&quot;: [<br>                &quot;famous-quotes&quot;,<br>                &quot;inspirational&quot;<br>            ],<br>            &quot;_id&quot;: &quot;QdK00IhCNX&quot;,<br>            &quot;author&quot;: &quot;Larry Page&quot;,<br>            &quot;content&quot;: &quot;If you're changing the world, you're working on important things. You're excited to get up in the morning.&quot;,<br>            &quot;authorSlug&quot;: &quot;larry-page&quot;,<br>            &quot;length&quot;: 106,<br>            &quot;dateAdded&quot;: &quot;2021-06-18&quot;,<br>            &quot;dateModified&quot;: &quot;2021-06-18&quot;<br>        },<br>        {<br>            &quot;tags&quot;: [<br>                &quot;wisdom&quot;<br>            ],<br>            &quot;_id&quot;: &quot;96eV21NlZKJ&quot;,<br>            &quot;content&quot;: &quot;Make it your habit not to be critical about small things.&quot;,<br>            &quot;author&quot;: &quot;Edward Everett Hale&quot;,<br>            &quot;authorSlug&quot;: &quot;edward-everett-hale&quot;,<br>            &quot;length&quot;: 57,<br>            &quot;dateAdded&quot;: &quot;2021-05-12&quot;,<br>            &quot;dateModified&quot;: &quot;2021-05-12&quot;<br>        },<br>        {<br>            &quot;tags&quot;: [<br>                &quot;famous-quotes&quot;<br>            ],<br>            &quot;_id&quot;: &quot;2xx4dfKrYVRf&quot;,<br>            &quot;content&quot;: &quot;Some people thrive on huge, dramatic change. Some people prefer the slow and steady route. Do what's right for you.&quot;,<br>            &quot;author&quot;: &quot;Julie Morgenstern&quot;,<br>            &quot;authorSlug&quot;: &quot;julie-morgenstern&quot;,<br>            &quot;length&quot;: 115,<br>            &quot;dateAdded&quot;: &quot;2021-05-12&quot;,<br>            &quot;dateModified&quot;: &quot;2021-05-12&quot;<br>        },<br>        {<br>            &quot;tags&quot;: [<br>                &quot;wisdom&quot;<br>            ],<br>            &quot;_id&quot;: &quot;wEfrviG0x9r&quot;,<br>            &quot;content&quot;: &quot;With age comes wisdom and a high sex drive. And the wisdom to enjoy it.&quot;,<br>            &quot;author&quot;: &quot;Amber Valletta&quot;,<br>            &quot;authorSlug&quot;: &quot;amber-valletta&quot;,<br>            &quot;length&quot;: 71,<br>            &quot;dateAdded&quot;: &quot;2021-05-12&quot;,<br>            &quot;dateModified&quot;: &quot;2021-05-12&quot;<br>        },<br>        {<br>            &quot;tags&quot;: [<br>                &quot;famous-quotes&quot;<br>            ],<br>            &quot;_id&quot;: &quot;6c2h-AtqMj6d&quot;,<br>            &quot;content&quot;: &quot;You can stand tall without standing on someone. You can be a victor without having victims.&quot;,<br>            &quot;author&quot;: &quot;Harriet Woods&quot;,<br>            &quot;authorSlug&quot;: &quot;harriet-woods&quot;,<br>            &quot;length&quot;: 91,<br>            &quot;dateAdded&quot;: &quot;2021-05-12&quot;,<br>            &quot;dateModified&quot;: &quot;2021-05-12&quot;<br>        },<br>        {<br>            &quot;tags&quot;: [<br>                &quot;famous-quotes&quot;<br>            ],<br>            &quot;_id&quot;: &quot;CdL1z3NLSDrN&quot;,<br>            &quot;content&quot;: &quot;Don't talk about what you have done or what you are going to do.&quot;,<br>            &quot;author&quot;: &quot;Thomas Jefferson&quot;,<br>            &quot;authorSlug&quot;: &quot;thomas-jefferson&quot;,<br>            &quot;length&quot;: 64,<br>            &quot;dateAdded&quot;: &quot;2021-05-12&quot;,<br>            &quot;dateModified&quot;: &quot;2021-05-12&quot;<br>        },<br>        {<br>            &quot;tags&quot;: [<br>                &quot;wisdom&quot;<br>            ],<br>            &quot;_id&quot;: &quot;l7UNABW6dA2&quot;,<br>            &quot;content&quot;: &quot;Silence is the sleep that nourishes wisdom.&quot;,<br>            &quot;author&quot;: &quot;Francis Bacon&quot;,<br>            &quot;authorSlug&quot;: &quot;francis-bacon&quot;,<br>            &quot;length&quot;: 43,<br>            &quot;dateAdded&quot;: &quot;2021-05-12&quot;,<br>            &quot;dateModified&quot;: &quot;2021-05-12&quot;<br>        },<br>        {<br>            &quot;tags&quot;: [<br>                &quot;friendship&quot;<br>            ],<br>            &quot;_id&quot;: &quot;sTma0kWPt2&quot;,<br>            &quot;content&quot;: &quot;Friendship, like credit, is highest when it is not used.&quot;,<br>            &quot;author&quot;: &quot;Elbert Hubbard&quot;,<br>            &quot;authorSlug&quot;: &quot;elbert-hubbard&quot;,<br>            &quot;length&quot;: 56,<br>            &quot;dateAdded&quot;: &quot;2021-05-12&quot;,<br>            &quot;dateModified&quot;: &quot;2021-05-12&quot;<br>        },<br>        {<br>            &quot;tags&quot;: [<br>                &quot;friendship&quot;<br>            ],<br>            &quot;_id&quot;: &quot;ARKzsqVpFY&quot;,<br>            &quot;content&quot;: &quot;Two persons cannot long be friends if they cannot forgive each other's little failings.&quot;,<br>            &quot;author&quot;: &quot;Jean de La Bruyère&quot;,<br>            &quot;authorSlug&quot;: &quot;jean-de-la-bruyere&quot;,<br>            &quot;length&quot;: 87,<br>            &quot;dateAdded&quot;: &quot;2021-05-12&quot;,<br>            &quot;dateModified&quot;: &quot;2021-05-12&quot;<br>        },<br>        {<br>            &quot;tags&quot;: [<br>                &quot;wisdom&quot;<br>            ],<br>            &quot;_id&quot;: &quot;5syS8jEn8m&quot;,<br>            &quot;content&quot;: &quot;When a thing is done, it's done. Don't look back. Look forward to your next objective.&quot;,<br>            &quot;author&quot;: &quot;George Marshall&quot;,<br>            &quot;authorSlug&quot;: &quot;george-marshall&quot;,<br>            &quot;length&quot;: 86,<br>            &quot;dateAdded&quot;: &quot;2021-05-12&quot;,<br>            &quot;dateModified&quot;: &quot;2021-05-12&quot;<br>        },<br>        {<br>            &quot;tags&quot;: [<br>                &quot;famous-quotes&quot;<br>            ],<br>            &quot;_id&quot;: &quot;bfpxfIQlqZ_3&quot;,<br>            &quot;content&quot;: &quot;He who controls others may be powerful, but he who has mastered himself is mightier still.&quot;,<br>            &quot;author&quot;: &quot;Laozi&quot;,<br>            &quot;authorSlug&quot;: &quot;laozi&quot;,<br>            &quot;length&quot;: 90,<br>            &quot;dateAdded&quot;: &quot;2021-05-12&quot;,<br>            &quot;dateModified&quot;: &quot;2021-05-12&quot;<br>        },<br>        {<br>            &quot;tags&quot;: [<br>                &quot;wisdom&quot;<br>            ],<br>            &quot;_id&quot;: &quot;6Kl3UT6ULk&quot;,<br>            &quot;content&quot;: &quot;Wisdom, compassion, and courage are the three universally recognized moral qualities of men.&quot;,<br>            &quot;author&quot;: &quot;Confucius&quot;,<br>            &quot;authorSlug&quot;: &quot;confucius&quot;,<br>            &quot;length&quot;: 92,<br>            &quot;dateAdded&quot;: &quot;2021-05-12&quot;,<br>            &quot;dateModified&quot;: &quot;2021-05-12&quot;<br>        },<br>        {<br>            &quot;tags&quot;: [<br>                &quot;famous-quotes&quot;<br>            ],<br>            &quot;_id&quot;: &quot;Oh-e1-oygRPX&quot;,<br>            &quot;content&quot;: &quot;To be wronged is nothing unless you continue to remember it.&quot;,<br>            &quot;author&quot;: &quot;Confucius&quot;,<br>            &quot;authorSlug&quot;: &quot;confucius&quot;,<br>            &quot;length&quot;: 60,<br>            &quot;dateAdded&quot;: &quot;2021-05-12&quot;,<br>            &quot;dateModified&quot;: &quot;2021-05-12&quot;<br>        },<br>        {<br>            &quot;tags&quot;: [<br>                &quot;famous-quotes&quot;<br>            ],<br>            &quot;_id&quot;: &quot;2wYjTZiTUSgQ&quot;,<br>            &quot;content&quot;: &quot;The things that one most wants to do are the things that are probably most worth doing.&quot;,<br>            &quot;author&quot;: &quot;Winifred Holtby&quot;,<br>            &quot;authorSlug&quot;: &quot;winifred-holtby&quot;,<br>            &quot;length&quot;: 87,<br>            &quot;dateAdded&quot;: &quot;2021-05-12&quot;,<br>            &quot;dateModified&quot;: &quot;2021-05-12&quot;<br>        },<br>        {<br>            &quot;tags&quot;: [<br>                &quot;friendship&quot;<br>            ],<br>            &quot;_id&quot;: &quot;4mPxqSvuiN&quot;,<br>            &quot;content&quot;: &quot;Friendship increases in visiting friends, but in visiting them seldom.&quot;,<br>            &quot;author&quot;: &quot;Francis Bacon&quot;,<br>            &quot;authorSlug&quot;: &quot;francis-bacon&quot;,<br>            &quot;length&quot;: 70,<br>            &quot;dateAdded&quot;: &quot;2021-05-12&quot;,<br>            &quot;dateModified&quot;: &quot;2021-05-12&quot;<br>        }<br>    ]<br>}</pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0.25s</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="0-3"></a>
+                                <span style="margin-left: 40px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                Then validate the total count "1885"
+                                        </span>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">1.03s</span></td>
+                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                    <tr class="test-SUCCESS">
+
+                        <td width="50" class="step-icon">
+                            <a name="1"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection1 success-icon"
+                                       style="margin-left: 20px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                                   style="display:block;">
+                                    <span class="top-level-step">
+                                                2: Test quotable api with various pathparam ({pathparam=authors, totalCount=700})
+                                        </span>
+                                </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                        <td width="100"><span class="top-level-step">1.58s</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection1" class="step-table-nested" style="display:none;">
+
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="1-0"></a>
+                                <span style="margin-left: 40px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                Given the api is composed of "https://api.quotable.io/"
+                                        </span>
+                                <span class="evidence">
+                                            <span class="piece-of-evidence">
+                <a name="report-data-251b8f59-cc42-4f9c-a50c-6c3931c7d310"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-7-0">
+                        BaseURI
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-7-0" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                BaseURI
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>https://api.quotable.io/</pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0s</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="1-1"></a>
+                                <span style="margin-left: 40px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                Given A call to quotable api with pathparm "authors"
+                                        </span>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">1.47s</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="1-2"></a>
+                                <span style="margin-left: 40px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                When response code is "200"
+                                        </span>
+                                <span class="evidence">
+                                            <span class="piece-of-evidence">
+                <a name="report-data-e8560593-bebe-4aea-98f0-a929e051c5b2"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-9-0">
+                        Response Body with status code : 200
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-9-0" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Response Body with status code : 200
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>{<br>    &quot;count&quot;: 20,<br>    &quot;totalCount&quot;: 700,<br>    &quot;page&quot;: 1,<br>    &quot;totalPages&quot;: 35,<br>    &quot;lastItemIndex&quot;: 20,<br>    &quot;results&quot;: [<br>        {<br>            &quot;link&quot;: &quot;https://en.wikipedia.org/wiki/A._A._Milne&quot;,<br>            &quot;bio&quot;: &quot;Alan Alexander Milne (18 January 1882 – 31 January 1956) was an English author, best known for his books about the teddy bear Winnie-the-Pooh and for various poems. Milne was a noted writer, primarily as a playwright, before the huge success of Pooh overshadowed all his previous work.&quot;,<br>            &quot;description&quot;: &quot;British author&quot;,<br>            &quot;_id&quot;: &quot;-yBDYq_Vtnuw&quot;,<br>            &quot;name&quot;: &quot;A. A. Milne&quot;,<br>            &quot;quoteCount&quot;: 2,<br>            &quot;slug&quot;: &quot;a-a-milne&quot;,<br>            &quot;dateAdded&quot;: &quot;2019-08-08&quot;,<br>            &quot;dateModified&quot;: &quot;2019-08-08&quot;<br>        },<br>        {<br>            &quot;link&quot;: &quot;https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam&quot;,<br>            &quot;bio&quot;: &quot;Avul Pakir Jainulabdeen Abdul Kalam (15 October 1931 – 27 July 2015) was an aerospace scientist who served as the 11th President of India from 2002 to 2007.&quot;,<br>            &quot;description&quot;: &quot;Scientist and 11th President of India&quot;,<br>            &quot;_id&quot;: &quot;Bblz8Knp6-ZB&quot;,<br>            &quot;name&quot;: &quot;A. P. J. Abdul Kalam&quot;,<br>            &quot;quoteCount&quot;: 2,<br>            &quot;slug&quot;: &quot;a-p-j-abdul-kalam&quot;,<br>            &quot;dateAdded&quot;: &quot;2019-12-13&quot;,<br>            &quot;dateModified&quot;: &quot;2019-12-13&quot;<br>        },<br>        {<br>            &quot;link&quot;: &quot;https://en.wikipedia.org/wiki/A._Powell_Davies&quot;,<br>            &quot;bio&quot;: &quot;Arthur Powell Davies (June 5, 1902 – September 26, 1957) was the minister of All Souls Church, Unitarian in Washington, D.C. from 1944 until his death in 1957. A prolific author of theological books and sermon collections, he came to national prominence in the U.S. through his liberal activism advocating civil rights for African-Americans and women.&quot;,<br>            &quot;description&quot;: &quot;Civil rights activist&quot;,<br>            &quot;_id&quot;: &quot;N-S5OevQOHpy&quot;,<br>            &quot;name&quot;: &quot;A. Powell Davies&quot;,<br>            &quot;quoteCount&quot;: 2,<br>            &quot;slug&quot;: &quot;a-powell-davies&quot;,<br>            &quot;dateAdded&quot;: &quot;2020-01-12&quot;,<br>            &quot;dateModified&quot;: &quot;2020-01-12&quot;<br>        },<br>        {<br>            &quot;link&quot;: &quot;https://en.wikipedia.org/wiki/Abigail_Adams&quot;,<br>            &quot;bio&quot;: &quot;Abigail Adams (November 22, [O.S. November 11] 1744 – October 28, 1818) was the wife and closest advisor of John Adams, as well as the mother of John Quincy Adams. She is sometimes considered to have been a Founder of the United States, and is now designated as the first Second Lady and second First Lady of the United States, although these titles were not used at the time.&quot;,<br>            &quot;description&quot;: &quot;2nd First Lady of the United States&quot;,<br>            &quot;_id&quot;: &quot;82zk1b45Zn&quot;,<br>            &quot;name&quot;: &quot;Abigail Adams&quot;,<br>            &quot;quoteCount&quot;: 1,<br>            &quot;slug&quot;: &quot;abigail-adams&quot;,<br>            &quot;dateAdded&quot;: &quot;2020-04-15&quot;,<br>            &quot;dateModified&quot;: &quot;2020-04-15&quot;<br>        },<br>        {<br>            &quot;link&quot;: &quot;https://en.wikipedia.org/wiki/Abraham_Lincoln&quot;,<br>            &quot;bio&quot;: &quot;Abraham Lincoln (February 12, 1809 – April 15, 1865) was an American statesman and lawyer who served as the 16th president of the United States (1861–1865). Lincoln led the nation through its greatest moral, constitutional, and political crisis in the American Civil War.&quot;,<br>            &quot;description&quot;: &quot;16th president of the United States&quot;,<br>            &quot;_id&quot;: &quot;8k75S1ntV9GW&quot;,<br>            &quot;name&quot;: &quot;Abraham Lincoln&quot;,<br>            &quot;quoteCount&quot;: 15,<br>            &quot;slug&quot;: &quot;abraham-lincoln&quot;,<br>            &quot;dateAdded&quot;: &quot;2020-01-31&quot;,<br>            &quot;dateModified&quot;: &quot;2020-01-31&quot;<br>        },<br>        {<br>            &quot;link&quot;: &quot;https://en.wikipedia.org/wiki/Abraham_Maslow&quot;,<br>            &quot;bio&quot;: &quot;Abraham Harold Maslow (April 1, 1908 – June 8, 1970) was an American psychologist who was best known for creating Maslow's hierarchy of needs, a theory of psychological health predicated on fulfilling innate human needs in priority, culminating in self-actualization.&quot;,<br>            &quot;description&quot;: &quot;American psychologist&quot;,<br>            &quot;_id&quot;: &quot;LIMi8MqkzapA&quot;,<br>            &quot;name&quot;: &quot;Abraham Maslow&quot;,<br>            &quot;quoteCount&quot;: 2,<br>            &quot;slug&quot;: &quot;abraham-maslow&quot;,<br>            &quot;dateAdded&quot;: &quot;2020-03-11&quot;,<br>            &quot;dateModified&quot;: &quot;2020-03-11&quot;<br>        },<br>        {<br>            &quot;link&quot;: &quot;https://en.wikipedia.org/wiki/Aeschylus&quot;,<br>            &quot;bio&quot;: &quot;Aeschylus was an ancient Greek author of Greek tragedy, and is often described as the father of tragedy. Academics' knowledge of the genre begins with his work, and understanding of earlier Greek tragedy is largely based on inferences made from reading his surviving plays.&quot;,<br>            &quot;description&quot;: &quot;Ancient Athenian playwright&quot;,<br>            &quot;_id&quot;: &quot;ossJxB6-1&quot;,<br>            &quot;name&quot;: &quot;Aeschylus&quot;,<br>            &quot;quoteCount&quot;: 3,<br>            &quot;slug&quot;: &quot;aeschylus&quot;,<br>            &quot;dateAdded&quot;: &quot;2020-04-15&quot;,<br>            &quot;dateModified&quot;: &quot;2020-04-15&quot;<br>        },<br>        {<br>            &quot;link&quot;: &quot;https://en.wikipedia.org/wiki/Aesop&quot;,<br>            &quot;bio&quot;: &quot;Aesop (c. 620 – 564 BCE) was a Greek fabulist and storyteller credited with a number of fables now collectively known as Aesop's Fables.&quot;,<br>            &quot;description&quot;: &quot;Ancient Greek storyteller&quot;,<br>            &quot;_id&quot;: &quot;XYxYtSeixS-o&quot;,<br>            &quot;name&quot;: &quot;Aesop&quot;,<br>            &quot;quoteCount&quot;: 2,<br>            &quot;slug&quot;: &quot;aesop&quot;,<br>            &quot;dateAdded&quot;: &quot;2020-01-15&quot;,<br>            &quot;dateModified&quot;: &quot;2020-01-15&quot;<br>        },<br>        {<br>            &quot;link&quot;: &quot;https://en.wikipedia.org/wiki/Afrika_Bambaataa&quot;,<br>            &quot;bio&quot;: &quot;Afrika Bambaataa (born Lance Taylor; April 17, 1957) is an American disc jockey, rapper, songwriter and producer from the South Bronx, New York. He is notable for releasing a series of genre-defining electro tracks in the 1980s that influenced the development of hip hop culture.&quot;,<br>            &quot;description&quot;: &quot;Record producer and activist&quot;,<br>            &quot;_id&quot;: &quot;gfyb7CJa5&quot;,<br>            &quot;name&quot;: &quot;Afrika Bambaataa&quot;,<br>            &quot;quoteCount&quot;: 1,<br>            &quot;slug&quot;: &quot;afrika-bambaataa&quot;,<br>            &quot;dateAdded&quot;: &quot;2019-03-24&quot;,<br>            &quot;dateModified&quot;: &quot;2019-03-24&quot;<br>        },<br>        {<br>            &quot;link&quot;: &quot;https://en.wikipedia.org/wiki/Agatha_Christie&quot;,<br>            &quot;bio&quot;: &quot;Dame Agatha Mary Clarissa Christie, Lady Mallowan,  (15 September 1890 – 12 January 1976) was an English writer known for her 66 detective novels and 14 short story collections, particularly those revolving around fictional detectives Hercule Poirot and Miss Marple. She also wrote the world's longest-running play The Mousetrap and six romances under the pen name Mary Westmacott.&quot;,<br>            &quot;description&quot;: &quot;English mystery writer&quot;,<br>            &quot;_id&quot;: &quot;qsGKdgIDw5wR&quot;,<br>            &quot;name&quot;: &quot;Agatha Christie&quot;,<br>            &quot;quoteCount&quot;: 1,<br>            &quot;slug&quot;: &quot;agatha-christie&quot;,<br>            &quot;dateAdded&quot;: &quot;2021-01-11&quot;,<br>            &quot;dateModified&quot;: &quot;2021-01-11&quot;<br>        },<br>        {<br>            &quot;link&quot;: &quot;https://en.wikipedia.org/wiki/Akhenaten&quot;,<br>            &quot;bio&quot;: &quot;Akhenaten, known before the fifth year of his reign as Amenhotep IV, was an ancient Egyptian pharaoh of the 18th Dynasty, who ruled for 17 years and died perhaps in 1336 BC or 1334 BC. &quot;,<br>            &quot;description&quot;: &quot;18th Dynasty pharaoh&quot;,<br>            &quot;_id&quot;: &quot;8HD7jXVhDv&quot;,<br>            &quot;name&quot;: &quot;Akhenaten&quot;,<br>            &quot;quoteCount&quot;: 1,<br>            &quot;slug&quot;: &quot;akhenaten&quot;,<br>            &quot;dateAdded&quot;: &quot;2021-01-30&quot;,<br>            &quot;dateModified&quot;: &quot;2021-01-30&quot;<br>        },<br>        {<br>            &quot;link&quot;: &quot;https://en.wikipedia.org/wiki/Alan_Cohen&quot;,<br>            &quot;bio&quot;: &quot;Alan Phillip Cohen (born October 5, 1954) is an American businessman, best known for his ownership of the Florida Panthers hockey team and his founding of several pharmaceutical companies. Cohen holds several degrees from the University of Florida.&quot;,<br>            &quot;description&quot;: &quot;American hockey executive&quot;,<br>            &quot;_id&quot;: &quot;EqFOxH8f03zq&quot;,<br>            &quot;name&quot;: &quot;Alan Cohen&quot;,<br>            &quot;quoteCount&quot;: 1,<br>            &quot;slug&quot;: &quot;alan-cohen&quot;,<br>            &quot;dateAdded&quot;: &quot;2020-01-31&quot;,<br>            &quot;dateModified&quot;: &quot;2020-01-31&quot;<br>        },<br>        {<br>            &quot;link&quot;: &quot;https://en.wikipedia.org/wiki/Alan_Watts&quot;,<br>            &quot;bio&quot;: &quot;Alan Wilson Watts (6 January 1915 – 16 November 1973) was a British writer and lecturer who interpreted and popularised Eastern philosophy and religion for a Western audience. Born in Chislehurst, England, he moved to the United States in 1938 and began Zen training in New York.&quot;,<br>            &quot;description&quot;: &quot;British author&quot;,<br>            &quot;_id&quot;: &quot;ceimd_kx6Nbh&quot;,<br>            &quot;name&quot;: &quot;Alan Watts&quot;,<br>            &quot;quoteCount&quot;: 1,<br>            &quot;slug&quot;: &quot;alan-watts&quot;,<br>            &quot;dateAdded&quot;: &quot;2021-02-27&quot;,<br>            &quot;dateModified&quot;: &quot;2021-02-27&quot;<br>        },<br>        {<br>            &quot;link&quot;: &quot;https://en.wikipedia.org/wiki/Albert_Camus&quot;,<br>            &quot;bio&quot;: &quot;Albert Camus (7 November 1913 – 4 January 1960) was a French philosopher, author, and journalist. He won the Nobel Prize in Literature at the age of 44 in 1957, the second-youngest recipient in history.&quot;,<br>            &quot;description&quot;: &quot;French author&quot;,<br>            &quot;_id&quot;: &quot;RmuonXrXY44Z&quot;,<br>            &quot;name&quot;: &quot;Albert Camus&quot;,<br>            &quot;quoteCount&quot;: 6,<br>            &quot;slug&quot;: &quot;albert-camus&quot;,<br>            &quot;dateAdded&quot;: &quot;2021-05-07&quot;,<br>            &quot;dateModified&quot;: &quot;2021-05-07&quot;<br>        },<br>        {<br>            &quot;link&quot;: &quot;https://en.wikipedia.org/wiki/Albert_Einstein&quot;,<br>            &quot;bio&quot;: &quot;Albert Einstein (14 March 1879 – 18 April 1955) was a German-born theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics (alongside quantum mechanics). His work is also known for its influence on the philosophy of science.&quot;,<br>            &quot;description&quot;: &quot;Theoretical physicist&quot;,<br>            &quot;_id&quot;: &quot;L76FRuEeGIUJ&quot;,<br>            &quot;name&quot;: &quot;Albert Einstein&quot;,<br>            &quot;quoteCount&quot;: 30,<br>            &quot;slug&quot;: &quot;albert-einstein&quot;,<br>            &quot;dateAdded&quot;: &quot;2019-07-03&quot;,<br>            &quot;dateModified&quot;: &quot;2019-07-03&quot;<br>        },<br>        {<br>            &quot;link&quot;: &quot;https://en.wikipedia.org/wiki/Albert_Schweitzer&quot;,<br>            &quot;bio&quot;: &quot;Albert Schweitzer  (14 January 1875 – 4 September 1965) was an Alsatian polymath. He was a theologian, organist, writer, humanitarian, philosopher, and physician.&quot;,<br>            &quot;description&quot;: &quot;Theologian&quot;,<br>            &quot;_id&quot;: &quot;ANT0MUtjmG6O&quot;,<br>            &quot;name&quot;: &quot;Albert Schweitzer&quot;,<br>            &quot;quoteCount&quot;: 8,<br>            &quot;slug&quot;: &quot;albert-schweitzer&quot;,<br>            &quot;dateAdded&quot;: &quot;2020-07-10&quot;,<br>            &quot;dateModified&quot;: &quot;2020-07-10&quot;<br>        },<br>        {<br>            &quot;link&quot;: &quot;https://en.wikipedia.org/wiki/Aldous_Huxley&quot;,<br>            &quot;bio&quot;: &quot;Aldous Leonard Huxley (26 July 1894 – 22 November 1963) was an English writer and philosopher. He wrote nearly fifty books—both novels and non-fiction works—as well as wide-ranging essays, narratives, and poems.&quot;,<br>            &quot;description&quot;: &quot;English author&quot;,<br>            &quot;_id&quot;: &quot;9B-Gz0CukKAX&quot;,<br>            &quot;name&quot;: &quot;Aldous Huxley&quot;,<br>            &quot;quoteCount&quot;: 4,<br>            &quot;slug&quot;: &quot;aldous-huxley&quot;,<br>            &quot;dateAdded&quot;: &quot;2020-04-15&quot;,<br>            &quot;dateModified&quot;: &quot;2020-04-15&quot;<br>        },<br>        {<br>            &quot;link&quot;: &quot;https://en.wikipedia.org/wiki/Alexander_Chalmers&quot;,<br>            &quot;bio&quot;: &quot;For the mayor of Warsaw of the same name, see Alexander Chalmers (mayor of Warsaw).  Alexander Chalmers (29 March 1759 – 29 December 1834) was a Scottish writer.&quot;,<br>            &quot;description&quot;: &quot;Scottish writer&quot;,<br>            &quot;_id&quot;: &quot;N5lVXx7ZOkGV&quot;,<br>            &quot;name&quot;: &quot;Alexander Chalmers&quot;,<br>            &quot;quoteCount&quot;: 1,<br>            &quot;slug&quot;: &quot;alexander-chalmers&quot;,<br>            &quot;dateAdded&quot;: &quot;2019-11-16&quot;,<br>            &quot;dateModified&quot;: &quot;2019-11-16&quot;<br>        },<br>        {<br>            &quot;link&quot;: &quot;https://en.wikipedia.org/wiki/Alexander_Pope&quot;,<br>            &quot;bio&quot;: &quot;Alexander Pope (21 May 1688 – 30 May 1744) is regarded as one of the greatest English poets, and the foremost poet of the early eighteenth century. He is best known for his satirical and discursive poetry, including The Rape of the Lock, The Dunciad, and An Essay on Criticism, as well as for his translation of Homer.&quot;,<br>            &quot;description&quot;: &quot;English poet&quot;,<br>            &quot;_id&quot;: &quot;_gz-cfmqA1mr&quot;,<br>            &quot;name&quot;: &quot;Alexander Pope&quot;,<br>            &quot;quoteCount&quot;: 3,<br>            &quot;slug&quot;: &quot;alexander-pope&quot;,<br>            &quot;dateAdded&quot;: &quot;2020-12-19&quot;,<br>            &quot;dateModified&quot;: &quot;2020-12-19&quot;<br>        },<br>        {<br>            &quot;link&quot;: &quot;https://en.wikipedia.org/wiki/Alexander_the_Great&quot;,<br>            &quot;bio&quot;: &quot;Alexander III of Macedon (July 356 BC – 11 June 323 BC), commonly known as Alexander the Great, was a king of the ancient Greek kingdom of Macedon and a member of the Argead dynasty. He was born in Pella in 356 BC and succeeded his father Philip II to the throne at the age of 20.&quot;,<br>            &quot;description&quot;: &quot;King of Macedonia&quot;,<br>            &quot;_id&quot;: &quot;GxAzeheUbynB&quot;,<br>            &quot;name&quot;: &quot;Alexander the Great&quot;,<br>            &quot;quoteCount&quot;: 1,<br>            &quot;slug&quot;: &quot;alexander-the-great&quot;,<br>            &quot;dateAdded&quot;: &quot;2020-05-21&quot;,<br>            &quot;dateModified&quot;: &quot;2020-05-21&quot;<br>        }<br>    ]<br>}</pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0.03s</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="1-3"></a>
+                                <span style="margin-left: 40px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                Then validate the total count "700"
+                                        </span>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0.06s</span></td>
+                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                <tr class="test-SUCCESS">
+                        <td colspan="2"></td>
+                    <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>9.11s</em></span></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <div id="beforefooter"></div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <span class="version">Serenity BDD version 2.4.24</span>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function toggleDiv(divId) {
+            $("#" + divId).toggle();
+            var imgsrc = $(".img" + divId).attr('src');
+            if (imgsrc == 'images/plus.png') {
+                $(".img" + divId).attr("src", function () {
+                    return "images/minus.png";
+                });
+
+            } else {
+                $(".img" + divId).attr("src", function () {
+                    return "images/plus.png";
+                });
+            }
+        }
+    </script>
+
+
+    <script type="text/javascript">
+        //<![CDATA[
+
+        $(document).ready(function () {
+            $('img.screenshot').imgPreview({
+                imgCSS: {
+                    width: '500px'
+                },
+                distanceFromCursor: {top: 10, left: -200}
+            });
+        });
+
+        //]]>
+    </script>
+    <div id="imgPreviewContainer" style="position: absolute; top: 612px; left: 355px; display: none; " class=""><img
+                src="" style="display: none; "></div>
+    <div id="imgPreviewContainer2" style="position: absolute; top: 925px; left: 320px; display: none; " class="">
+        <img style="width: 200px; display: none; " src=""></div>
+    <div id="imgPreviewWithStyles" style="position: absolute; top: 1272px; left: 321px; display: none; " class="">
+        <img style="height: 200px; opacity: 1; display: none; " src=""></div>
+    <div id="imgPreviewWithStyles2" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+    <div id="imgPreviewWithStyles3" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+
+</div>
+</body>
+</html>

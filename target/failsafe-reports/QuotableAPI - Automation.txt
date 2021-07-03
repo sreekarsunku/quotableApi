@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: QuotableAPI - Automation
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 34.926 s - in QuotableAPI - Automation

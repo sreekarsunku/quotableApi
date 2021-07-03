@@ -1,0 +1,3 @@
+com\project\quotableapi\quotableapi\stepdef\QuotableStepDef.class
+com\project\quotableapi\quotableapi\QuotableApi.class
+com\project\quotableapi\quotableapi\runner\CucumberRunner.class

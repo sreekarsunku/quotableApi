@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"QuotableAPI - Automation","Test quotable api with various pathparam","SUCCESS","2021-07-03T13:31:23.918+05:30[Asia/Calcutta]","0.0","9.11"
+"QuotableAPI - Automation","Test quotable api with various single queryparam","SUCCESS","2021-07-03T13:31:33.042+05:30[Asia/Calcutta]","0.0","20.72"
+"QuotableAPI - Automation","Test quotable api with tags quotes queryparams","SUCCESS","2021-07-03T13:31:53.778+05:30[Asia/Calcutta]","0.0","1.55"
+"QuotableAPI - Automation","Test quotable api with tags pages queryparams","SUCCESS","2021-07-03T13:31:55.341+05:30[Asia/Calcutta]","0.0","1.52"
+"QuotableAPI - Automation","Test quotable api with tags pages author queryparams","SUCCESS","2021-07-03T13:31:56.872+05:30[Asia/Calcutta]","0.0","1.56"

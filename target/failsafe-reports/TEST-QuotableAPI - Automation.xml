@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report-3.0.xsd" version="3.0" name="QuotableAPI - Automation" time="34.926" tests="12" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\hp-pc\git\quotable-Api\target\test-classes;C:\Users\hp-pc\git\quotable-Api\target\quotable-api-1.0.0-SNAPSHOT.jar;C:\Users\hp-pc\.m2\repository\net\serenity-bdd\serenity-core\2.4.24\serenity-core-2.4.24.jar;C:\Users\hp-pc\.m2\repository\net\serenity-bdd\serenity-model\2.4.24\serenity-model-2.4.24.jar;C:\Users\hp-pc\.m2\repository\org\apache\commons\commons-text\1.9\commons-text-1.9.jar;C:\Users\hp-pc\.m2\repository\commons-net\commons-net\3.6\commons-net-3.6.jar;C:\Users\hp-pc\.m2\repository\com\google\guava\guava\30.1-jre\guava-30.1-jre.jar;C:\Users\hp-pc\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\hp-pc\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\hp-pc\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\hp-pc\.m2\repository\org\checkerframework\checker-qual\3.5.0\checker-qual-3.5.0.jar;C:\Users\hp-pc\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\hp-pc\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\hp-pc\.m2\repository\com\google\inject\guice\5.0.1\guice-5.0.1.jar;C:\Users\hp-pc\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\hp-pc\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\hp-pc\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\hp-pc\.m2\repository\com\thoughtworks\xstream\xstream\1.4.16\xstream-1.4.16.jar;C:\Users\hp-pc\.m2\repository\io\github\x-stream\mxparser\1.2.1\mxparser-1.2.1.jar;C:\Users\hp-pc\.m2\repository\xmlpull\xmlpull\1.1.3.1\xmlpull-1.1.3.1.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\cucumber-core\6.10.2\cucumber-core-6.10.2.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\cucumber-gherkin\6.10.2\cucumber-gherkin-6.10.2.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.10.2\cucumber-gherkin-messages-6.10.2.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\messages\14.0.1\messages-14.0.1.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\cucumber-plugin\6.10.2\cucumber-plugin-6.10.2.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\docstring\6.10.2\docstring-6.10.2.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\html-formatter\12.0.0\html-formatter-12.0.0.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\create-meta\3.0.0\create-meta-3.0.0.jar;C:\Users\hp-pc\.m2\repository\com\typesafe\config\1.3.1\config-1.3.1.jar;C:\Users\hp-pc\.m2\repository\org\imgscalr\imgscalr-lib\4.2\imgscalr-lib-4.2.jar;C:\Users\hp-pc\.m2\repository\org\awaitility\awaitility\4.0.3\awaitility-4.0.3.jar;C:\Users\hp-pc\.m2\repository\org\freemarker\freemarker\2.3.29\freemarker-2.3.29.jar;C:\Users\hp-pc\.m2\repository\net\sourceforge\jexcelapi\jxl\2.6.12\jxl-2.6.12.jar;C:\Users\hp-pc\.m2\repository\org\asciidoctor\asciidoctorj\1.5.6\asciidoctorj-1.5.6.jar;C:\Users\hp-pc\.m2\repository\org\jruby\jruby-complete\1.7.26\jruby-complete-1.7.26.jar;C:\Users\hp-pc\.m2\repository\net\bytebuddy\byte-buddy\1.10.10\byte-buddy-1.10.10.jar;C:\Users\hp-pc\.m2\repository\net\bytebuddy\byte-buddy-agent\1.10.10\byte-buddy-agent-1.10.10.jar;C:\Users\hp-pc\.m2\repository\org\objenesis\objenesis\3.1\objenesis-3.1.jar;C:\Users\hp-pc\.m2\repository\net\serenity-bdd\serenity-reports\2.4.24\serenity-reports-2.4.24.jar;C:\Users\hp-pc\.m2\repository\net\serenity-bdd\serenity-stats\2.4.24\serenity-stats-2.4.24.jar;C:\Users\hp-pc\.m2\repository\net\serenity-bdd\serenity-reports-configuration\2.4.24\serenity-reports-configuration-2.4.24.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-all\0.34.30\flexmark-all-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark\0.34.30\flexmark-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-abbreviation\0.34.30\flexmark-ext-abbreviation-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-admonition\0.34.30\flexmark-ext-admonition-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-anchorlink\0.34.30\flexmark-ext-anchorlink-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-aside\0.34.30\flexmark-ext-aside-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-attributes\0.34.30\flexmark-ext-attributes-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-autolink\0.34.30\flexmark-ext-autolink-0.34.30.jar;C:\Users\hp-pc\.m2\repository\org\nibor\autolink\autolink\0.6.0\autolink-0.6.0.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-definition\0.34.30\flexmark-ext-definition-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-emoji\0.34.30\flexmark-ext-emoji-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-enumerated-reference\0.34.30\flexmark-ext-enumerated-reference-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-escaped-character\0.34.30\flexmark-ext-escaped-character-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-footnotes\0.34.30\flexmark-ext-footnotes-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-issues\0.34.30\flexmark-ext-gfm-issues-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-strikethrough\0.34.30\flexmark-ext-gfm-strikethrough-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-tables\0.34.30\flexmark-ext-gfm-tables-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-tasklist\0.34.30\flexmark-ext-gfm-tasklist-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-users\0.34.30\flexmark-ext-gfm-users-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-gitlab\0.34.30\flexmark-ext-gitlab-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-front-matter\0.34.30\flexmark-ext-jekyll-front-matter-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-tag\0.34.30\flexmark-ext-jekyll-tag-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-media-tags\0.34.30\flexmark-ext-media-tags-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-test-util\0.34.30\flexmark-test-util-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-ins\0.34.30\flexmark-ext-ins-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-xwiki-macros\0.34.30\flexmark-ext-xwiki-macros-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-superscript\0.34.30\flexmark-ext-superscript-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-tables\0.34.30\flexmark-ext-tables-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-toc\0.34.30\flexmark-ext-toc-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-typographic\0.34.30\flexmark-ext-typographic-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-wikilink\0.34.30\flexmark-ext-wikilink-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-yaml-front-matter\0.34.30\flexmark-ext-yaml-front-matter-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-youtube-embedded\0.34.30\flexmark-ext-youtube-embedded-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-formatter\0.34.30\flexmark-formatter-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-html-parser\0.34.30\flexmark-html-parser-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-jira-converter\0.34.30\flexmark-jira-converter-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-pdf-converter\0.34.30\flexmark-pdf-converter-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\openhtmltopdf\openhtmltopdf-core\0.0.1-RC13\openhtmltopdf-core-0.0.1-RC13.jar;C:\Users\hp-pc\.m2\repository\com\openhtmltopdf\openhtmltopdf-pdfbox\0.0.1-RC13\openhtmltopdf-pdfbox-0.0.1-RC13.jar;C:\Users\hp-pc\.m2\repository\org\apache\pdfbox\pdfbox\2.0.8\pdfbox-2.0.8.jar;C:\Users\hp-pc\.m2\repository\org\apache\pdfbox\fontbox\2.0.8\fontbox-2.0.8.jar;C:\Users\hp-pc\.m2\repository\org\apache\pdfbox\xmpbox\2.0.8\xmpbox-2.0.8.jar;C:\Users\hp-pc\.m2\repository\de\rototor\pdfbox\graphics2d\0.12\graphics2d-0.12.jar;C:\Users\hp-pc\.m2\repository\com\openhtmltopdf\openhtmltopdf-rtl-support\0.0.1-RC13\openhtmltopdf-rtl-support-0.0.1-RC13.jar;C:\Users\hp-pc\.m2\repository\com\ibm\icu\icu4j\59.1\icu4j-59.1.jar;C:\Users\hp-pc\.m2\repository\com\openhtmltopdf\openhtmltopdf-jsoup-dom-converter\0.0.1-RC13\openhtmltopdf-jsoup-dom-converter-0.0.1-RC13.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-profile-pegdown\0.34.30\flexmark-profile-pegdown-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-util\0.34.30\flexmark-util-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-youtrack-converter\0.34.30\flexmark-youtrack-converter-0.34.30.jar;C:\Users\hp-pc\.m2\repository\es\nitaur\markdown\txtmark\0.16\txtmark-0.16.jar;C:\Users\hp-pc\.m2\repository\net\serenity-bdd\serenity-report-resources\2.4.24\serenity-report-resources-2.4.24.jar;C:\Users\hp-pc\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\hp-pc\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\hp-pc\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\hp-pc\.m2\repository\org\seleniumhq\selenium\selenium-server\3.141.59\selenium-server-3.141.59.jar;C:\Users\hp-pc\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\hp-pc\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\hp-pc\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\hp-pc\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\hp-pc\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\hp-pc\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\hp-pc\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.4.12.v20180830\jetty-repacked-9.4.12.v20180830.jar;C:\Users\hp-pc\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\hp-pc\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\hp-pc\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\hp-pc\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;C:\Users\hp-pc\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\hp-pc\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\hp-pc\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\hp-pc\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\hp-pc\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\hp-pc\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\hp-pc\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\hp-pc\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.47.1\htmlunit-2.47.1.jar;C:\Users\hp-pc\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\hp-pc\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\hp-pc\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.47.0\htmlunit-core-js-2.47.0.jar;C:\Users\hp-pc\.m2\repository\net\sourceforge\htmlunit\neko-htmlunit\2.47.1\neko-htmlunit-2.47.1.jar;C:\Users\hp-pc\.m2\repository\xerces\xercesImpl\2.12.0\xercesImpl-2.12.0.jar;C:\Users\hp-pc\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\hp-pc\.m2\repository\net\sourceforge\htmlunit\htmlunit-cssparser\1.7.0\htmlunit-cssparser-1.7.0.jar;C:\Users\hp-pc\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\hp-pc\.m2\repository\com\shapesecurity\salvation2\3.0.0\salvation2-3.0.0.jar;C:\Users\hp-pc\.m2\repository\org\eclipse\jetty\websocket\websocket-client\9.4.36.v20210114\websocket-client-9.4.36.v20210114.jar;C:\Users\hp-pc\.m2\repository\org\eclipse\jetty\jetty-client\9.4.36.v20210114\jetty-client-9.4.36.v20210114.jar;C:\Users\hp-pc\.m2\repository\org\eclipse\jetty\jetty-http\9.4.36.v20210114\jetty-http-9.4.36.v20210114.jar;C:\Users\hp-pc\.m2\repository\org\eclipse\jetty\jetty-util\9.4.36.v20210114\jetty-util-9.4.36.v20210114.jar;C:\Users\hp-pc\.m2\repository\org\eclipse\jetty\jetty-io\9.4.36.v20210114\jetty-io-9.4.36.v20210114.jar;C:\Users\hp-pc\.m2\repository\org\eclipse\jetty\websocket\websocket-common\9.4.36.v20210114\websocket-common-9.4.36.v20210114.jar;C:\Users\hp-pc\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.4.36.v20210114\websocket-api-9.4.36.v20210114.jar;C:\Users\hp-pc\.m2\repository\org\seleniumhq\selenium\htmlunit-driver\2.47.1\htmlunit-driver-2.47.1.jar;C:\Users\hp-pc\.m2\repository\com\codeborne\phantomjsdriver\1.4.4\phantomjsdriver-1.4.4.jar;C:\Users\hp-pc\.m2\repository\io\appium\java-client\7.5.1\java-client-7.5.1.jar;C:\Users\hp-pc\.m2\repository\commons-validator\commons-validator\1.7\commons-validator-1.7.jar;C:\Users\hp-pc\.m2\repository\commons-digester\commons-digester\2.1\commons-digester-2.1.jar;C:\Users\hp-pc\.m2\repository\org\aspectj\aspectjweaver\1.9.6\aspectjweaver-1.9.6.jar;C:\Users\hp-pc\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\hp-pc\.m2\repository\net\sf\opencsv\opencsv\2.0\opencsv-2.0.jar;C:\Users\hp-pc\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\hp-pc\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\hp-pc\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\hp-pc\.m2\repository\org\fluentlenium\fluentlenium-core\0.10.2\fluentlenium-core-0.10.2.jar;C:\Users\hp-pc\.m2\repository\io\github\bonigarcia\webdrivermanager\4.4.1\webdrivermanager-4.4.1.jar;C:\Users\hp-pc\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\hp-pc\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\hp-pc\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.2\httpcore5-h2-5.0.2.jar;C:\Users\hp-pc\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\hp-pc\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\hp-pc\.m2\repository\com\jhlabs\filters\2.0.235\filters-2.0.235.jar;C:\Users\hp-pc\.m2\repository\com\assertthat\selenium-shutterbug\1.4\selenium-shutterbug-1.4.jar;C:\Users\hp-pc\.m2\repository\org\projectlombok\lombok\1.18.8\lombok-1.18.8.jar;C:\Users\hp-pc\.m2\repository\com\github\zafarkhaja\java-semver\0.9.0\java-semver-0.9.0.jar;C:\Users\hp-pc\.m2\repository\ru\yandex\qatools\ashot\ashot\1.5.4\ashot-1.5.4.jar;C:\Users\hp-pc\.m2\repository\com\paulhammant\ngwebdriver\1.1.5\ngwebdriver-1.1.5.jar;C:\Users\hp-pc\.m2\repository\joda-time\joda-time\2.8.2\joda-time-2.8.2.jar;C:\Users\hp-pc\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\hp-pc\.m2\repository\com\google\jimfs\jimfs\1.1\jimfs-1.1.jar;C:\Users\hp-pc\.m2\repository\org\mockito\mockito-core\3.3.3\mockito-core-3.3.3.jar;C:\Users\hp-pc\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\hp-pc\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\hp-pc\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar;C:\Users\hp-pc\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\hp-pc\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\hp-pc\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\hp-pc\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\hp-pc\.m2\repository\net\serenity-bdd\serenity-cucumber6\2.4.24\serenity-cucumber6-2.4.24.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\cucumber-java\6.10.2\cucumber-java-6.10.2.jar;C:\Users\hp-pc\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\cucumber-junit\6.10.2\cucumber-junit-6.10.2.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\datatable-matchers\3.4.0\datatable-matchers-3.4.0.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\datatable\3.4.0\datatable-3.4.0.jar;C:\Users\hp-pc\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\hp-pc\.m2\repository\org\apache\commons\commons-csv\1.5\commons-csv-1.5.jar;C:\Users\hp-pc\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\hp-pc\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\hp-pc\.m2\repository\net\serenity-bdd\serenity-screenplay\2.4.24\serenity-screenplay-2.4.24.jar;C:\Users\hp-pc\.m2\repository\net\serenity-bdd\serenity-screenplay-webdriver\2.4.24\serenity-screenplay-webdriver-2.4.24.jar;C:\Users\hp-pc\.m2\repository\net\serenity-bdd\serenity-ensure\2.4.24\serenity-ensure-2.4.24.jar;C:\Users\hp-pc\.m2\repository\net\serenity-bdd\serenity-junit\2.4.24\serenity-junit-2.4.24.jar;C:\Users\hp-pc\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.4.31\kotlin-stdlib-1.4.31.jar;C:\Users\hp-pc\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.4.31\kotlin-stdlib-common-1.4.31.jar;C:\Users\hp-pc\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\hp-pc\.m2\repository\ch\qos\logback\logback-classic\1.0.13\logback-classic-1.0.13.jar;C:\Users\hp-pc\.m2\repository\ch\qos\logback\logback-core\1.0.13\logback-core-1.0.13.jar;C:\Users\hp-pc\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;C:\Users\hp-pc\.m2\repository\org\assertj\assertj-core\3.6.2\assertj-core-3.6.2.jar;C:\Users\hp-pc\.m2\repository\io\rest-assured\rest-assured\4.3.2\rest-assured-4.3.2.jar;C:\Users\hp-pc\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.6\groovy-xml-3.0.6.jar;C:\Users\hp-pc\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\hp-pc\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\hp-pc\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\hp-pc\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\hp-pc\.m2\repository\io\rest-assured\json-path\4.3.2\json-path-4.3.2.jar;C:\Users\hp-pc\.m2\repository\org\codehaus\groovy\groovy-json\3.0.6\groovy-json-3.0.6.jar;C:\Users\hp-pc\.m2\repository\io\rest-assured\rest-assured-common\4.3.2\rest-assured-common-4.3.2.jar;C:\Users\hp-pc\.m2\repository\io\rest-assured\xml-path\4.3.2\xml-path-4.3.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_261\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\hp-pc\AppData\Local\Temp\surefire1864257113457161808\surefirebooter6961827126397372515.jar C:\Users\hp-pc\AppData\Local\Temp\surefire1864257113457161808 2021-07-03T13-31-13_273-jvmRun1 surefire276368756870340946tmp surefire_09048493584027088991tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\hp-pc\git\quotable-Api\target\test-classes;C:\Users\hp-pc\git\quotable-Api\target\quotable-api-1.0.0-SNAPSHOT.jar;C:\Users\hp-pc\.m2\repository\net\serenity-bdd\serenity-core\2.4.24\serenity-core-2.4.24.jar;C:\Users\hp-pc\.m2\repository\net\serenity-bdd\serenity-model\2.4.24\serenity-model-2.4.24.jar;C:\Users\hp-pc\.m2\repository\org\apache\commons\commons-text\1.9\commons-text-1.9.jar;C:\Users\hp-pc\.m2\repository\commons-net\commons-net\3.6\commons-net-3.6.jar;C:\Users\hp-pc\.m2\repository\com\google\guava\guava\30.1-jre\guava-30.1-jre.jar;C:\Users\hp-pc\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\hp-pc\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\hp-pc\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\hp-pc\.m2\repository\org\checkerframework\checker-qual\3.5.0\checker-qual-3.5.0.jar;C:\Users\hp-pc\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\hp-pc\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\hp-pc\.m2\repository\com\google\inject\guice\5.0.1\guice-5.0.1.jar;C:\Users\hp-pc\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\hp-pc\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\hp-pc\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\hp-pc\.m2\repository\com\thoughtworks\xstream\xstream\1.4.16\xstream-1.4.16.jar;C:\Users\hp-pc\.m2\repository\io\github\x-stream\mxparser\1.2.1\mxparser-1.2.1.jar;C:\Users\hp-pc\.m2\repository\xmlpull\xmlpull\1.1.3.1\xmlpull-1.1.3.1.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\cucumber-core\6.10.2\cucumber-core-6.10.2.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\cucumber-gherkin\6.10.2\cucumber-gherkin-6.10.2.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.10.2\cucumber-gherkin-messages-6.10.2.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\messages\14.0.1\messages-14.0.1.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\cucumber-plugin\6.10.2\cucumber-plugin-6.10.2.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\docstring\6.10.2\docstring-6.10.2.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\html-formatter\12.0.0\html-formatter-12.0.0.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\create-meta\3.0.0\create-meta-3.0.0.jar;C:\Users\hp-pc\.m2\repository\com\typesafe\config\1.3.1\config-1.3.1.jar;C:\Users\hp-pc\.m2\repository\org\imgscalr\imgscalr-lib\4.2\imgscalr-lib-4.2.jar;C:\Users\hp-pc\.m2\repository\org\awaitility\awaitility\4.0.3\awaitility-4.0.3.jar;C:\Users\hp-pc\.m2\repository\org\freemarker\freemarker\2.3.29\freemarker-2.3.29.jar;C:\Users\hp-pc\.m2\repository\net\sourceforge\jexcelapi\jxl\2.6.12\jxl-2.6.12.jar;C:\Users\hp-pc\.m2\repository\org\asciidoctor\asciidoctorj\1.5.6\asciidoctorj-1.5.6.jar;C:\Users\hp-pc\.m2\repository\org\jruby\jruby-complete\1.7.26\jruby-complete-1.7.26.jar;C:\Users\hp-pc\.m2\repository\net\bytebuddy\byte-buddy\1.10.10\byte-buddy-1.10.10.jar;C:\Users\hp-pc\.m2\repository\net\bytebuddy\byte-buddy-agent\1.10.10\byte-buddy-agent-1.10.10.jar;C:\Users\hp-pc\.m2\repository\org\objenesis\objenesis\3.1\objenesis-3.1.jar;C:\Users\hp-pc\.m2\repository\net\serenity-bdd\serenity-reports\2.4.24\serenity-reports-2.4.24.jar;C:\Users\hp-pc\.m2\repository\net\serenity-bdd\serenity-stats\2.4.24\serenity-stats-2.4.24.jar;C:\Users\hp-pc\.m2\repository\net\serenity-bdd\serenity-reports-configuration\2.4.24\serenity-reports-configuration-2.4.24.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-all\0.34.30\flexmark-all-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark\0.34.30\flexmark-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-abbreviation\0.34.30\flexmark-ext-abbreviation-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-admonition\0.34.30\flexmark-ext-admonition-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-anchorlink\0.34.30\flexmark-ext-anchorlink-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-aside\0.34.30\flexmark-ext-aside-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-attributes\0.34.30\flexmark-ext-attributes-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-autolink\0.34.30\flexmark-ext-autolink-0.34.30.jar;C:\Users\hp-pc\.m2\repository\org\nibor\autolink\autolink\0.6.0\autolink-0.6.0.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-definition\0.34.30\flexmark-ext-definition-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-emoji\0.34.30\flexmark-ext-emoji-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-enumerated-reference\0.34.30\flexmark-ext-enumerated-reference-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-escaped-character\0.34.30\flexmark-ext-escaped-character-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-footnotes\0.34.30\flexmark-ext-footnotes-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-issues\0.34.30\flexmark-ext-gfm-issues-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-strikethrough\0.34.30\flexmark-ext-gfm-strikethrough-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-tables\0.34.30\flexmark-ext-gfm-tables-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-tasklist\0.34.30\flexmark-ext-gfm-tasklist-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-users\0.34.30\flexmark-ext-gfm-users-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-gitlab\0.34.30\flexmark-ext-gitlab-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-front-matter\0.34.30\flexmark-ext-jekyll-front-matter-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-tag\0.34.30\flexmark-ext-jekyll-tag-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-media-tags\0.34.30\flexmark-ext-media-tags-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-test-util\0.34.30\flexmark-test-util-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-ins\0.34.30\flexmark-ext-ins-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-xwiki-macros\0.34.30\flexmark-ext-xwiki-macros-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-superscript\0.34.30\flexmark-ext-superscript-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-tables\0.34.30\flexmark-ext-tables-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-toc\0.34.30\flexmark-ext-toc-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-typographic\0.34.30\flexmark-ext-typographic-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-wikilink\0.34.30\flexmark-ext-wikilink-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-yaml-front-matter\0.34.30\flexmark-ext-yaml-front-matter-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-ext-youtube-embedded\0.34.30\flexmark-ext-youtube-embedded-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-formatter\0.34.30\flexmark-formatter-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-html-parser\0.34.30\flexmark-html-parser-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-jira-converter\0.34.30\flexmark-jira-converter-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-pdf-converter\0.34.30\flexmark-pdf-converter-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\openhtmltopdf\openhtmltopdf-core\0.0.1-RC13\openhtmltopdf-core-0.0.1-RC13.jar;C:\Users\hp-pc\.m2\repository\com\openhtmltopdf\openhtmltopdf-pdfbox\0.0.1-RC13\openhtmltopdf-pdfbox-0.0.1-RC13.jar;C:\Users\hp-pc\.m2\repository\org\apache\pdfbox\pdfbox\2.0.8\pdfbox-2.0.8.jar;C:\Users\hp-pc\.m2\repository\org\apache\pdfbox\fontbox\2.0.8\fontbox-2.0.8.jar;C:\Users\hp-pc\.m2\repository\org\apache\pdfbox\xmpbox\2.0.8\xmpbox-2.0.8.jar;C:\Users\hp-pc\.m2\repository\de\rototor\pdfbox\graphics2d\0.12\graphics2d-0.12.jar;C:\Users\hp-pc\.m2\repository\com\openhtmltopdf\openhtmltopdf-rtl-support\0.0.1-RC13\openhtmltopdf-rtl-support-0.0.1-RC13.jar;C:\Users\hp-pc\.m2\repository\com\ibm\icu\icu4j\59.1\icu4j-59.1.jar;C:\Users\hp-pc\.m2\repository\com\openhtmltopdf\openhtmltopdf-jsoup-dom-converter\0.0.1-RC13\openhtmltopdf-jsoup-dom-converter-0.0.1-RC13.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-profile-pegdown\0.34.30\flexmark-profile-pegdown-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-util\0.34.30\flexmark-util-0.34.30.jar;C:\Users\hp-pc\.m2\repository\com\vladsch\flexmark\flexmark-youtrack-converter\0.34.30\flexmark-youtrack-converter-0.34.30.jar;C:\Users\hp-pc\.m2\repository\es\nitaur\markdown\txtmark\0.16\txtmark-0.16.jar;C:\Users\hp-pc\.m2\repository\net\serenity-bdd\serenity-report-resources\2.4.24\serenity-report-resources-2.4.24.jar;C:\Users\hp-pc\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\hp-pc\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\hp-pc\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\hp-pc\.m2\repository\org\seleniumhq\selenium\selenium-server\3.141.59\selenium-server-3.141.59.jar;C:\Users\hp-pc\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\hp-pc\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\hp-pc\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\hp-pc\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\hp-pc\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\hp-pc\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\hp-pc\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.4.12.v20180830\jetty-repacked-9.4.12.v20180830.jar;C:\Users\hp-pc\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\hp-pc\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\hp-pc\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\hp-pc\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;C:\Users\hp-pc\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\hp-pc\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\hp-pc\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\hp-pc\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\hp-pc\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\hp-pc\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\hp-pc\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\hp-pc\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.47.1\htmlunit-2.47.1.jar;C:\Users\hp-pc\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\hp-pc\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\hp-pc\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.47.0\htmlunit-core-js-2.47.0.jar;C:\Users\hp-pc\.m2\repository\net\sourceforge\htmlunit\neko-htmlunit\2.47.1\neko-htmlunit-2.47.1.jar;C:\Users\hp-pc\.m2\repository\xerces\xercesImpl\2.12.0\xercesImpl-2.12.0.jar;C:\Users\hp-pc\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\hp-pc\.m2\repository\net\sourceforge\htmlunit\htmlunit-cssparser\1.7.0\htmlunit-cssparser-1.7.0.jar;C:\Users\hp-pc\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\hp-pc\.m2\repository\com\shapesecurity\salvation2\3.0.0\salvation2-3.0.0.jar;C:\Users\hp-pc\.m2\repository\org\eclipse\jetty\websocket\websocket-client\9.4.36.v20210114\websocket-client-9.4.36.v20210114.jar;C:\Users\hp-pc\.m2\repository\org\eclipse\jetty\jetty-client\9.4.36.v20210114\jetty-client-9.4.36.v20210114.jar;C:\Users\hp-pc\.m2\repository\org\eclipse\jetty\jetty-http\9.4.36.v20210114\jetty-http-9.4.36.v20210114.jar;C:\Users\hp-pc\.m2\repository\org\eclipse\jetty\jetty-util\9.4.36.v20210114\jetty-util-9.4.36.v20210114.jar;C:\Users\hp-pc\.m2\repository\org\eclipse\jetty\jetty-io\9.4.36.v20210114\jetty-io-9.4.36.v20210114.jar;C:\Users\hp-pc\.m2\repository\org\eclipse\jetty\websocket\websocket-common\9.4.36.v20210114\websocket-common-9.4.36.v20210114.jar;C:\Users\hp-pc\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.4.36.v20210114\websocket-api-9.4.36.v20210114.jar;C:\Users\hp-pc\.m2\repository\org\seleniumhq\selenium\htmlunit-driver\2.47.1\htmlunit-driver-2.47.1.jar;C:\Users\hp-pc\.m2\repository\com\codeborne\phantomjsdriver\1.4.4\phantomjsdriver-1.4.4.jar;C:\Users\hp-pc\.m2\repository\io\appium\java-client\7.5.1\java-client-7.5.1.jar;C:\Users\hp-pc\.m2\repository\commons-validator\commons-validator\1.7\commons-validator-1.7.jar;C:\Users\hp-pc\.m2\repository\commons-digester\commons-digester\2.1\commons-digester-2.1.jar;C:\Users\hp-pc\.m2\repository\org\aspectj\aspectjweaver\1.9.6\aspectjweaver-1.9.6.jar;C:\Users\hp-pc\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\hp-pc\.m2\repository\net\sf\opencsv\opencsv\2.0\opencsv-2.0.jar;C:\Users\hp-pc\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\hp-pc\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\hp-pc\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\hp-pc\.m2\repository\org\fluentlenium\fluentlenium-core\0.10.2\fluentlenium-core-0.10.2.jar;C:\Users\hp-pc\.m2\repository\io\github\bonigarcia\webdrivermanager\4.4.1\webdrivermanager-4.4.1.jar;C:\Users\hp-pc\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\hp-pc\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\hp-pc\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.2\httpcore5-h2-5.0.2.jar;C:\Users\hp-pc\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\hp-pc\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\hp-pc\.m2\repository\com\jhlabs\filters\2.0.235\filters-2.0.235.jar;C:\Users\hp-pc\.m2\repository\com\assertthat\selenium-shutterbug\1.4\selenium-shutterbug-1.4.jar;C:\Users\hp-pc\.m2\repository\org\projectlombok\lombok\1.18.8\lombok-1.18.8.jar;C:\Users\hp-pc\.m2\repository\com\github\zafarkhaja\java-semver\0.9.0\java-semver-0.9.0.jar;C:\Users\hp-pc\.m2\repository\ru\yandex\qatools\ashot\ashot\1.5.4\ashot-1.5.4.jar;C:\Users\hp-pc\.m2\repository\com\paulhammant\ngwebdriver\1.1.5\ngwebdriver-1.1.5.jar;C:\Users\hp-pc\.m2\repository\joda-time\joda-time\2.8.2\joda-time-2.8.2.jar;C:\Users\hp-pc\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\hp-pc\.m2\repository\com\google\jimfs\jimfs\1.1\jimfs-1.1.jar;C:\Users\hp-pc\.m2\repository\org\mockito\mockito-core\3.3.3\mockito-core-3.3.3.jar;C:\Users\hp-pc\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\hp-pc\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\hp-pc\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar;C:\Users\hp-pc\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\hp-pc\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\hp-pc\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\hp-pc\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\hp-pc\.m2\repository\net\serenity-bdd\serenity-cucumber6\2.4.24\serenity-cucumber6-2.4.24.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\cucumber-java\6.10.2\cucumber-java-6.10.2.jar;C:\Users\hp-pc\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\cucumber-junit\6.10.2\cucumber-junit-6.10.2.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\datatable-matchers\3.4.0\datatable-matchers-3.4.0.jar;C:\Users\hp-pc\.m2\repository\io\cucumber\datatable\3.4.0\datatable-3.4.0.jar;C:\Users\hp-pc\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\hp-pc\.m2\repository\org\apache\commons\commons-csv\1.5\commons-csv-1.5.jar;C:\Users\hp-pc\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\hp-pc\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\hp-pc\.m2\repository\net\serenity-bdd\serenity-screenplay\2.4.24\serenity-screenplay-2.4.24.jar;C:\Users\hp-pc\.m2\repository\net\serenity-bdd\serenity-screenplay-webdriver\2.4.24\serenity-screenplay-webdriver-2.4.24.jar;C:\Users\hp-pc\.m2\repository\net\serenity-bdd\serenity-ensure\2.4.24\serenity-ensure-2.4.24.jar;C:\Users\hp-pc\.m2\repository\net\serenity-bdd\serenity-junit\2.4.24\serenity-junit-2.4.24.jar;C:\Users\hp-pc\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.4.31\kotlin-stdlib-1.4.31.jar;C:\Users\hp-pc\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.4.31\kotlin-stdlib-common-1.4.31.jar;C:\Users\hp-pc\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\hp-pc\.m2\repository\ch\qos\logback\logback-classic\1.0.13\logback-classic-1.0.13.jar;C:\Users\hp-pc\.m2\repository\ch\qos\logback\logback-core\1.0.13\logback-core-1.0.13.jar;C:\Users\hp-pc\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;C:\Users\hp-pc\.m2\repository\org\assertj\assertj-core\3.6.2\assertj-core-3.6.2.jar;C:\Users\hp-pc\.m2\repository\io\rest-assured\rest-assured\4.3.2\rest-assured-4.3.2.jar;C:\Users\hp-pc\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.6\groovy-xml-3.0.6.jar;C:\Users\hp-pc\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\hp-pc\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\hp-pc\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\hp-pc\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\hp-pc\.m2\repository\io\rest-assured\json-path\4.3.2\json-path-4.3.2.jar;C:\Users\hp-pc\.m2\repository\org\codehaus\groovy\groovy-json\3.0.6\groovy-json-3.0.6.jar;C:\Users\hp-pc\.m2\repository\io\rest-assured\rest-assured-common\4.3.2\rest-assured-common-4.3.2.jar;C:\Users\hp-pc\.m2\repository\io\rest-assured\xml-path\4.3.2\xml-path-4.3.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\hp-pc"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files (x86)\Java\jdk1.8.0_261\jre"/>
+    <property name="basedir" value="C:\Users\hp-pc\git\quotable-Api"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\hp-pc\AppData\Local\Temp\surefire1864257113457161808\surefirebooter6961827126397372515.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files (x86)\Java\jdk1.8.0_261\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.8.0_261\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.8.0_261\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.8.0_261\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.8.0_261\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.8.0_261\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.8.0_261\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk1.8.0_261\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="java.runtime.version" value="1.8.0_261-b12"/>
+    <property name="user.name" value="hp-pc"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jdk1.8.0_261\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="webdriver.base.url" value=""/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="localRepository" value="C:\Users\hp-pc\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\hp-pc\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_261"/>
+    <property name="user.dir" value="C:\Users\hp-pc\git\quotable-Api"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_261\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files (x86)/Java/jre1.8.0_261/bin/client;C:/Program Files (x86)/Java/jre1.8.0_261/bin;C:/Program Files (x86)/Java/jre1.8.0_261/lib/i386;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Broadcom\Broadcom 802.11;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Hewlett-Packard\SimplePass\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\MongoDB 3.2\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\hp-pc\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Java\jdk1.8.0_261\bin;C:\Users\hp-pc\Desktop\apache-maven-3.8.1-bin\apache-maven-3.8.1\bin;;C:\Users\hp-pc\Desktop\eclipse-SDK-4.9-win32\eclipse;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.261-b12"/>
+    <property name="java.ext.dirs" value="C:\Program Files (x86)\Java\jdk1.8.0_261\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="Test quotable api with various pathparam #1" classname="QuotableAPI - Automation" time="7.937">
+    <system-out><![CDATA[13:31:22.996 [main] INFO  i.c.core.plugin.SerenityReporter - Running feature from file:///C:/Users/hp-pc/git/quotable-Api/src/test/resources/features/quotable_api.feature
+
+13:31:23.418 [main] INFO   - 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+-------------------------------------------------------------------------------------
+
+
+13:31:23.434 [main] DEBUG n.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@a8d2c8f9
+
+13:31:23.434 [main] INFO   - Test Suite Started: QuotableAPI - Automation
+
+
+
+12
+ Scenarios (
+12 passed
+)
+
+
+51
+ Steps (
+51 passed
+)
+
+
+0m
+35.457s
+
+
+
+
+
+
+13:31:58.444 [main] DEBUG n.t.core.reports.ReportService - Reporting formats: [JSON, HTML]
+
+13:31:58.572 [main] DEBUG n.t.core.reports.ReportService - Reporting formats: [JSON, HTML]
+
+13:31:58.593 [main] DEBUG n.t.core.reports.ReportService - Generating reports for 5 test outcomes using: net.thucydides.core.reports.json.JSONTestOutcomeReporter@fcd46d
+
+13:31:58.595 [pool-2-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome QuotableAPI - Automation:Test quotable api with various pathparam
+
+13:31:58.595 [pool-2-thread-3] DEBUG n.t.core.reports.ReportService - Processing test outcome QuotableAPI - Automation:Test_quotable_api_with_tags_quotes_queryparams
+
+13:31:58.595 [pool-2-thread-1] INFO  n.t.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@fcd46d: Generating report for test outcome: QuotableAPI - Automation:Test quotable api with various pathparam
+
+13:31:58.595 [pool-2-thread-2] DEBUG n.t.core.reports.ReportService - Processing test outcome QuotableAPI - Automation:Test_quotable_api_with_various_single_queryparam
+
+13:31:58.595 [pool-2-thread-4] DEBUG n.t.core.reports.ReportService - Processing test outcome QuotableAPI - Automation:Test_quotable_api_with_tags_pages_queryparams
+
+13:31:58.595 [pool-2-thread-3] INFO  n.t.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@fcd46d: Generating report for test outcome: QuotableAPI - Automation:Test_quotable_api_with_tags_quotes_queryparams
+
+13:31:58.595 [pool-2-thread-4] INFO  n.t.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@fcd46d: Generating report for test outcome: QuotableAPI - Automation:Test_quotable_api_with_tags_pages_queryparams
+
+13:31:58.595 [pool-2-thread-2] INFO  n.t.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@fcd46d: Generating report for test outcome: QuotableAPI - Automation:Test_quotable_api_with_various_single_queryparam
+
+13:31:58.618 [pool-2-thread-4] DEBUG n.t.c.r.json.JSONTestOutcomeReporter - Generating JSON report for Test quotable api with tags pages queryparams to file C:\Users\hp-pc\git\quotable-Api\target\site\serenity\a79052d0294bfa39ff99d5ac551a55a3e5e6493e9c04644a67362ee589bec764.json (using temp file C:\Users\hp-pc\git\quotable-Api\target\site\serenity\a79052d0294bfa39ff99d5ac551a55a3e5e6493e9c04644a67362ee589bec764.jsonacc2128d-2e76-43cd-8a0e-f348881e13d2)
+
+13:31:58.619 [pool-2-thread-3] DEBUG n.t.c.r.json.JSONTestOutcomeReporter - Generating JSON report for Test quotable api with tags quotes queryparams to file C:\Users\hp-pc\git\quotable-Api\target\site\serenity\0a59e90be5f463eb1a332e3b3e3722e1603ff12f8da219b952d8a772399ca5c8.json (using temp file C:\Users\hp-pc\git\quotable-Api\target\site\serenity\0a59e90be5f463eb1a332e3b3e3722e1603ff12f8da219b952d8a772399ca5c8.json45124cda-fa37-400f-a853-09bc6e8a0b18)
+
+13:31:58.619 [pool-2-thread-1] DEBUG n.t.c.r.json.JSONTestOutcomeReporter - Generating JSON report for Test quotable api with various pathparam to file C:\Users\hp-pc\git\quotable-Api\target\site\serenity\ad7970ba73cdf95900f5c2f93d78ef75fcf3a3d946559740b50d051435edec78.json (using temp file C:\Users\hp-pc\git\quotable-Api\target\site\serenity\ad7970ba73cdf95900f5c2f93d78ef75fcf3a3d946559740b50d051435edec78.json65c53f79-b976-4c1e-a55a-d6ffb060004c)
+
+13:31:58.619 [pool-2-thread-2] DEBUG n.t.c.r.json.JSONTestOutcomeReporter - Generating JSON report for Test quotable api with various single queryparam to file C:\Users\hp-pc\git\quotable-Api\target\site\serenity\7d0ed15f92ff135a548294b8e20d075c258ad2357e814c2b1d8afd82e1ef73b4.json (using temp file C:\Users\hp-pc\git\quotable-Api\target\site\serenity\7d0ed15f92ff135a548294b8e20d075c258ad2357e814c2b1d8afd82e1ef73b4.jsone62a8a3c-5c13-4637-b5d7-9248517a5b83)
+
+13:31:58.720 [pool-2-thread-3] DEBUG n.t.core.reports.ReportService - Processing test outcome QuotableAPI - Automation:Test_quotable_api_with_tags_quotes_queryparams done
+
+13:31:58.720 [pool-2-thread-3] DEBUG n.t.core.reports.ReportService - Processing test outcome QuotableAPI - Automation:Test_quotable_api_with_tags_pages_author_queryparams
+
+13:31:58.720 [pool-2-thread-3] INFO  n.t.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@fcd46d: Generating report for test outcome: QuotableAPI - Automation:Test_quotable_api_with_tags_pages_author_queryparams
+
+13:31:58.720 [pool-2-thread-3] DEBUG n.t.c.r.json.JSONTestOutcomeReporter - Generating JSON report for Test quotable api with tags pages author queryparams to file C:\Users\hp-pc\git\quotable-Api\target\site\serenity\4ca93022e048141c563f070b6db9c74b4c00ffc2fc7658a4bf4895be9813d5b4.json (using temp file C:\Users\hp-pc\git\quotable-Api\target\site\serenity\4ca93022e048141c563f070b6db9c74b4c00ffc2fc7658a4bf4895be9813d5b4.json6851b2c3-fa07-45b7-b1ac-5d8bc88913de)
+
+13:31:58.735 [pool-2-thread-4] DEBUG n.t.core.reports.ReportService - Processing test outcome QuotableAPI - Automation:Test_quotable_api_with_tags_pages_queryparams done
+
+13:31:58.735 [pool-2-thread-3] DEBUG n.t.core.reports.ReportService - Processing test outcome QuotableAPI - Automation:Test_quotable_api_with_tags_pages_author_queryparams done
+
+13:31:58.735 [pool-2-thread-2] DEBUG n.t.core.reports.ReportService - Processing test outcome QuotableAPI - Automation:Test_quotable_api_with_various_single_queryparam done
+
+13:31:58.735 [pool-2-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome QuotableAPI - Automation:Test quotable api with various pathparam done
+
+13:31:58.735 [main] DEBUG n.t.core.reports.ReportService - Shutting down executor service
+
+13:31:58.735 [main] DEBUG n.t.core.reports.ReportService - Reports generated in: 142 ms
+
+13:31:58.735 [main] DEBUG n.t.core.reports.ReportService - Generating reports for 5 test outcomes using: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1c25153
+
+13:31:58.735 [pool-3-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome QuotableAPI - Automation:Test quotable api with various pathparam
+
+13:31:58.735 [pool-3-thread-1] INFO  n.t.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1c25153: Generating report for test outcome: QuotableAPI - Automation:Test quotable api with various pathparam
+
+13:31:58.735 [pool-3-thread-2] DEBUG n.t.core.reports.ReportService - Processing test outcome QuotableAPI - Automation:Test_quotable_api_with_various_single_queryparam
+
+13:31:58.735 [pool-3-thread-4] DEBUG n.t.core.reports.ReportService - Processing test outcome QuotableAPI - Automation:Test_quotable_api_with_tags_pages_queryparams
+
+13:31:58.735 [pool-3-thread-2] INFO  n.t.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1c25153: Generating report for test outcome: QuotableAPI - Automation:Test_quotable_api_with_various_single_queryparam
+
+13:31:58.735 [pool-3-thread-4] INFO  n.t.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1c25153: Generating report for test outcome: QuotableAPI - Automation:Test_quotable_api_with_tags_pages_queryparams
+
+13:31:58.735 [pool-3-thread-3] DEBUG n.t.core.reports.ReportService - Processing test outcome QuotableAPI - Automation:Test_quotable_api_with_tags_quotes_queryparams
+
+13:31:58.735 [pool-3-thread-3] INFO  n.t.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1c25153: Generating report for test outcome: QuotableAPI - Automation:Test_quotable_api_with_tags_quotes_queryparams
+
+13:31:58.876 [pool-3-thread-2] DEBUG n.t.c.r.m.cucumber.CucumberParser - Added feature QuotableAPI - Automation
+
+13:31:58.876 [pool-3-thread-3] DEBUG n.t.c.r.m.cucumber.CucumberParser - Added feature QuotableAPI - Automation
+
+13:31:58.876 [pool-3-thread-4] DEBUG n.t.c.r.m.cucumber.CucumberParser - Added feature QuotableAPI - Automation
+
+13:31:58.892 [pool-3-thread-1] DEBUG n.t.c.r.m.cucumber.CucumberParser - Added feature QuotableAPI - Automation
+
+13:31:58.907 [pool-3-thread-3] DEBUG n.t.c.r.BaseRequirementsService - Requirement found for test outcome Test quotable api with tags quotes queryparams-[]: Optional[Requirement{name='QuotableAPI - Automation', type='feature' parent = 'null', cardNumber='null'}]
+
+13:31:58.907 [pool-3-thread-1] DEBUG n.t.c.r.BaseRequirementsService - Requirement found for test outcome Test quotable api with various pathparam-[]: Optional[Requirement{name='QuotableAPI - Automation', type='feature' parent = 'null', cardNumber='null'}]
+
+13:31:58.907 [pool-3-thread-4] DEBUG n.t.c.r.BaseRequirementsService - Requirement found for test outcome Test quotable api with tags pages queryparams-[]: Optional[Requirement{name='QuotableAPI - Automation', type='feature' parent = 'null', cardNumber='null'}]
+
+13:31:58.907 [pool-3-thread-2] DEBUG n.t.c.r.BaseRequirementsService - Requirement found for test outcome Test quotable api with various single queryparam-[]: Optional[Requirement{name='QuotableAPI - Automation', type='feature' parent = 'null', cardNumber='null'}]
+
+13:31:58.907 [pool-3-thread-2] DEBUG n.t.c.r.BaseRequirementsService - Requirement found for test outcome Test quotable api with various single queryparam-[]: Optional[Requirement{name='QuotableAPI - Automation', type='feature' parent = 'null', cardNumber='null'}]
+
+13:31:58.907 [pool-3-thread-4] DEBUG n.t.c.r.BaseRequirementsService - Requirement found for test outcome Test quotable api with tags pages queryparams-[]: Optional[Requirement{name='QuotableAPI - Automation', type='feature' parent = 'null', cardNumber='null'}]
+
+13:31:58.907 [pool-3-thread-3] DEBUG n.t.c.r.BaseRequirementsService - Requirement found for test outcome Test quotable api with tags quotes queryparams-[]: Optional[Requirement{name='QuotableAPI - Automation', type='feature' parent = 'null', cardNumber='null'}]
+
+13:31:58.907 [pool-3-thread-1] DEBUG n.t.c.r.BaseRequirementsService - Requirement found for test outcome Test quotable api with various pathparam-[]: Optional[Requirement{name='QuotableAPI - Automation', type='feature' parent = 'null', cardNumber='null'}]
+
+13:32:00.630 [pool-3-thread-4] DEBUG serenity.reporting - Generating report in a79052d0294bfa39ff99d5ac551a55a3e5e6493e9c04644a67362ee589bec764.html
+
+13:32:00.630 [pool-3-thread-3] DEBUG serenity.reporting - Generating report in 0a59e90be5f463eb1a332e3b3e3722e1603ff12f8da219b952d8a772399ca5c8.html
+
+13:32:00.630 [pool-3-thread-1] DEBUG serenity.reporting - Generating report in ad7970ba73cdf95900f5c2f93d78ef75fcf3a3d946559740b50d051435edec78.html
+
+13:32:00.630 [pool-3-thread-2] DEBUG serenity.reporting - Generating report in 7d0ed15f92ff135a548294b8e20d075c258ad2357e814c2b1d8afd82e1ef73b4.html
+
+13:32:02.164 [pool-3-thread-3] DEBUG serenity.reporting - Generated report 0a59e90be5f463eb1a332e3b3e3722e1603ff12f8da219b952d8a772399ca5c8.html in 1533 ms
+
+13:32:02.164 [pool-3-thread-3] DEBUG n.t.core.reports.ReportService - Processing test outcome QuotableAPI - Automation:Test_quotable_api_with_tags_quotes_queryparams done
+
+13:32:02.164 [pool-3-thread-3] DEBUG n.t.core.reports.ReportService - Processing test outcome QuotableAPI - Automation:Test_quotable_api_with_tags_pages_author_queryparams
+
+13:32:02.164 [pool-3-thread-3] INFO  n.t.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1c25153: Generating report for test outcome: QuotableAPI - Automation:Test_quotable_api_with_tags_pages_author_queryparams
+
+13:32:02.167 [pool-3-thread-3] DEBUG n.t.c.r.BaseRequirementsService - Requirement found for test outcome Test quotable api with tags pages author queryparams-[]: Optional[Requirement{name='QuotableAPI - Automation', type='feature' parent = 'null', cardNumber='null'}]
+
+13:32:02.169 [pool-3-thread-4] DEBUG serenity.reporting - Generated report a79052d0294bfa39ff99d5ac551a55a3e5e6493e9c04644a67362ee589bec764.html in 1539 ms
+
+13:32:02.169 [pool-3-thread-4] DEBUG n.t.core.reports.ReportService - Processing test outcome QuotableAPI - Automation:Test_quotable_api_with_tags_pages_queryparams done
+
+13:32:02.170 [pool-3-thread-3] DEBUG n.t.c.r.BaseRequirementsService - Requirement found for test outcome Test quotable api with tags pages author queryparams-[]: Optional[Requirement{name='QuotableAPI - Automation', type='feature' parent = 'null', cardNumber='null'}]
+
+13:32:02.173 [pool-3-thread-1] DEBUG serenity.reporting - Generated report ad7970ba73cdf95900f5c2f93d78ef75fcf3a3d946559740b50d051435edec78.html in 1543 ms
+
+13:32:02.173 [pool-3-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome QuotableAPI - Automation:Test quotable api with various pathparam done
+
+13:32:02.175 [pool-3-thread-3] DEBUG serenity.reporting - Generating report in 4ca93022e048141c563f070b6db9c74b4c00ffc2fc7658a4bf4895be9813d5b4.html
+
+13:32:02.205 [pool-3-thread-3] DEBUG serenity.reporting - Generated report 4ca93022e048141c563f070b6db9c74b4c00ffc2fc7658a4bf4895be9813d5b4.html in 30 ms
+
+13:32:02.205 [pool-3-thread-3] DEBUG n.t.core.reports.ReportService - Processing test outcome QuotableAPI - Automation:Test_quotable_api_with_tags_pages_author_queryparams done
+
+13:32:02.207 [pool-3-thread-2] DEBUG serenity.reporting - Generated report 7d0ed15f92ff135a548294b8e20d075c258ad2357e814c2b1d8afd82e1ef73b4.html in 1577 ms
+
+13:32:02.207 [pool-3-thread-2] DEBUG n.t.core.reports.ReportService - Processing test outcome QuotableAPI - Automation:Test_quotable_api_with_various_single_queryparam done
+
+13:32:02.207 [main] DEBUG n.t.core.reports.ReportService - Shutting down executor service
+
+13:32:02.207 [main] DEBUG n.t.core.reports.ReportService - Reports generated in: 3472 ms
+
+13:32:02.815 [main] INFO  i.c.core.plugin.SerenityReporter - Cleanup test resources for URI file:///C:/Users/hp-pc/git/quotable-Api/src/test/resources/features/quotable_api.feature
+
+
+@quotableAPI @quotableAPIWithPathParameters
+Scenario Outline: Test quotable api with various pathparam # src/test/resources/features/quotable_api.feature:16
+13:31:23.777 [pool-2-thread-1] INFO  i.c.core.plugin.SerenityReporter - Running feature from file:///C:/Users/hp-pc/git/quotable-Api/src/test/resources/features/quotable_api.feature
+13:31:23.934 [pool-2-thread-1] INFO   - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Test quotable api with various pathparam(quotableapi---automation;test-quotable-api-with-various-pathparam)
+--------------------------------------------------------------------------------
+13:31:24.105 [pool-2-thread-1] DEBUG n.t.c.r.m.cucumber.CucumberParser - Added feature QuotableAPI - Automation
+  Given the api is composed of "https://api.quotable.io/"  # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.the_api_is_composed_of(java.lang.String)
+  Given A call to quotable api with pathparm "quotes"      # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.a_call_to_quotable_api_with_pathparm(java.lang.String)
+  When response code is "200"                              # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.response_code_is(java.lang.String)
+  Then validate the total count "1885"                     # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.validate_the_total_count(java.lang.String)
+13:31:31.449 [pool-2-thread-1] INFO   - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Test quotable api with various pathparam
+----------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="Test quotable api with various pathparam #2" classname="QuotableAPI - Automation" time="1.578">
+    <system-out><![CDATA[
+@quotableAPI @quotableAPIWithPathParameters
+Scenario Outline: Test quotable api with various pathparam # src/test/resources/features/quotable_api.feature:17
+13:31:31.449 [pool-2-thread-1] INFO  i.c.core.plugin.SerenityReporter - Running feature from file:///C:/Users/hp-pc/git/quotable-Api/src/test/resources/features/quotable_api.feature
+  Given the api is composed of "https://api.quotable.io/"  # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.the_api_is_composed_of(java.lang.String)
+  Given A call to quotable api with pathparm "authors"     # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.a_call_to_quotable_api_with_pathparm(java.lang.String)
+  When response code is "200"                              # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.response_code_is(java.lang.String)
+  Then validate the total count "700"                      # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.validate_the_total_count(java.lang.String)
+13:31:33.027 [pool-2-thread-1] INFO   - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Test quotable api with various pathparam
+----------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="Test_quotable_api_with_various_single_queryparam #1" classname="QuotableAPI - Automation" time="3.125">
+    <system-out><![CDATA[
+@quotableAPI @quotableAPIWithSingleQueryParameter
+Scenario Outline: Test_quotable_api_with_various_single_queryparam # src/test/resources/features/quotable_api.feature:29
+13:31:33.027 [pool-2-thread-1] INFO  i.c.core.plugin.SerenityReporter - Running feature from file:///C:/Users/hp-pc/git/quotable-Api/src/test/resources/features/quotable_api.feature
+13:31:33.042 [pool-2-thread-1] INFO   - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Test_quotable_api_with_various_single_queryparam(quotableapi---automation;test-quotable-api-with-various-single-queryparam)
+--------------------------------------------------------------------------------
+  Given the api is composed of "https://api.quotable.io/"          # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.the_api_is_composed_of(java.lang.String)
+  Given A call to quotable api with path as "random"               # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.a_call_to_quotable_api_with_path_as(java.lang.String)
+  Then validate the api with following queryparams                 # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.validate_the_api_with_following_queryparams(io.cucumber.datatable.DataTable)
+  When response code is "200"                                      # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.response_code_is(java.lang.String)
+13:31:36.152 [pool-2-thread-1] INFO   - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Test quotable api with various single queryparam
+----------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="Test_quotable_api_with_various_single_queryparam #2" classname="QuotableAPI - Automation" time="2.906">
+    <system-out><![CDATA[
+@quotableAPI @quotableAPIWithSingleQueryParameter
+Scenario Outline: Test_quotable_api_with_various_single_queryparam # src/test/resources/features/quotable_api.feature:30
+13:31:36.152 [pool-2-thread-1] INFO  i.c.core.plugin.SerenityReporter - Running feature from file:///C:/Users/hp-pc/git/quotable-Api/src/test/resources/features/quotable_api.feature
+  Given the api is composed of "https://api.quotable.io/"          # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.the_api_is_composed_of(java.lang.String)
+  Given A call to quotable api with path as "random"               # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.a_call_to_quotable_api_with_path_as(java.lang.String)
+  Then validate the api with following queryparams                 # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.validate_the_api_with_following_queryparams(io.cucumber.datatable.DataTable)
+  When response code is "200"                                      # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.response_code_is(java.lang.String)
+13:31:39.058 [pool-2-thread-1] INFO   - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Test quotable api with various single queryparam
+----------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="Test_quotable_api_with_various_single_queryparam #3" classname="QuotableAPI - Automation" time="2.934">
+    <system-out><![CDATA[
+@quotableAPI @quotableAPIWithSingleQueryParameter
+Scenario Outline: Test_quotable_api_with_various_single_queryparam # src/test/resources/features/quotable_api.feature:31
+13:31:39.058 [pool-2-thread-1] INFO  i.c.core.plugin.SerenityReporter - Running feature from file:///C:/Users/hp-pc/git/quotable-Api/src/test/resources/features/quotable_api.feature
+  Given the api is composed of "https://api.quotable.io/"          # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.the_api_is_composed_of(java.lang.String)
+  Given A call to quotable api with path as "quotes"               # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.a_call_to_quotable_api_with_path_as(java.lang.String)
+  Then validate the api with following queryparams                 # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.validate_the_api_with_following_queryparams(io.cucumber.datatable.DataTable)
+  When response code is "200"                                      # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.response_code_is(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Test_quotable_api_with_various_single_queryparam #4" classname="QuotableAPI - Automation" time="2.981">
+    <system-out><![CDATA[
+@quotableAPI @quotableAPIWithSingleQueryParameter
+Scenario Outline: Test_quotable_api_with_various_single_queryparam # src/test/resources/features/quotable_api.feature:32
+13:31:41.992 [pool-2-thread-1] INFO  i.c.core.plugin.SerenityReporter - Running feature from file:///C:/Users/hp-pc/git/quotable-Api/src/test/resources/features/quotable_api.feature
+  Given the api is composed of "https://api.quotable.io/"          # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.the_api_is_composed_of(java.lang.String)
+  Given A call to quotable api with path as "quotes"               # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.a_call_to_quotable_api_with_path_as(java.lang.String)
+  Then validate the api with following queryparams                 # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.validate_the_api_with_following_queryparams(io.cucumber.datatable.DataTable)
+  When response code is "200"                                      # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.response_code_is(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Test_quotable_api_with_various_single_queryparam #5" classname="QuotableAPI - Automation" time="2.897">
+    <system-out><![CDATA[
+@quotableAPI @quotableAPIWithSingleQueryParameter
+Scenario Outline: Test_quotable_api_with_various_single_queryparam # src/test/resources/features/quotable_api.feature:33
+13:31:44.973 [pool-2-thread-1] INFO  i.c.core.plugin.SerenityReporter - Running feature from file:///C:/Users/hp-pc/git/quotable-Api/src/test/resources/features/quotable_api.feature
+  Given the api is composed of "https://api.quotable.io/"          # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.the_api_is_composed_of(java.lang.String)
+  Given A call to quotable api with path as "authors"              # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.a_call_to_quotable_api_with_path_as(java.lang.String)
+  Then validate the api with following queryparams                 # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.validate_the_api_with_following_queryparams(io.cucumber.datatable.DataTable)
+  When response code is "200"                                      # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.response_code_is(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Test_quotable_api_with_various_single_queryparam #6" classname="QuotableAPI - Automation" time="2.955">
+    <system-out><![CDATA[
+@quotableAPI @quotableAPIWithSingleQueryParameter
+Scenario Outline: Test_quotable_api_with_various_single_queryparam # src/test/resources/features/quotable_api.feature:34
+13:31:47.870 [pool-2-thread-1] INFO  i.c.core.plugin.SerenityReporter - Running feature from file:///C:/Users/hp-pc/git/quotable-Api/src/test/resources/features/quotable_api.feature
+  Given the api is composed of "https://api.quotable.io/"          # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.the_api_is_composed_of(java.lang.String)
+  Given A call to quotable api with path as "authors"              # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.a_call_to_quotable_api_with_path_as(java.lang.String)
+  Then validate the api with following queryparams                 # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.validate_the_api_with_following_queryparams(io.cucumber.datatable.DataTable)
+  When response code is "200"                                      # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.response_code_is(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Test_quotable_api_with_various_single_queryparam #7" classname="QuotableAPI - Automation" time="2.938">
+    <system-out><![CDATA[
+@quotableAPI @quotableAPIWithSingleQueryParameter
+Scenario Outline: Test_quotable_api_with_various_single_queryparam # src/test/resources/features/quotable_api.feature:35
+13:31:50.825 [pool-2-thread-1] INFO  i.c.core.plugin.SerenityReporter - Running feature from file:///C:/Users/hp-pc/git/quotable-Api/src/test/resources/features/quotable_api.feature
+  Given the api is composed of "https://api.quotable.io/"          # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.the_api_is_composed_of(java.lang.String)
+  Given A call to quotable api with path as "authors"              # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.a_call_to_quotable_api_with_path_as(java.lang.String)
+  Then validate the api with following queryparams                 # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.validate_the_api_with_following_queryparams(io.cucumber.datatable.DataTable)
+  When response code is "200"                                      # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.response_code_is(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Test_quotable_api_with_tags_quotes_queryparams" classname="QuotableAPI - Automation" time="1.562">
+    <system-out><![CDATA[
+@quotableAPI @quotableAPIWithTagsAndQuotesParam
+Scenario Outline: Test_quotable_api_with_tags_quotes_queryparams # src/test/resources/features/quotable_api.feature:49
+13:31:53.763 [pool-2-thread-1] INFO  i.c.core.plugin.SerenityReporter - Running feature from file:///C:/Users/hp-pc/git/quotable-Api/src/test/resources/features/quotable_api.feature
+13:31:53.778 [pool-2-thread-1] INFO   - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Test_quotable_api_with_tags_quotes_queryparams(quotableapi---automation;test-quotable-api-with-tags-quotes-queryparams)
+--------------------------------------------------------------------------------
+  Given the api is composed of "https://api.quotable.io/"        # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.the_api_is_composed_of(java.lang.String)
+  Given A call to quotable api with path as "quotes"             # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.a_call_to_quotable_api_with_path_as(java.lang.String)
+map size3
+  Then validate the api with following multiple queryparams      # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.validate_the_api_with_following_multiple_queryparams(io.cucumber.datatable.DataTable)
+  When response code is "200"                                    # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.response_code_is(java.lang.String)
+  Then validate the total count "40"                             # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.validate_the_total_count(java.lang.String)
+13:31:55.325 [pool-2-thread-1] INFO   - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Test quotable api with tags quotes queryparams
+----------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="Test_quotable_api_with_tags_pages_queryparams" classname="QuotableAPI - Automation" time="1.531">
+    <system-out><![CDATA[
+@quotableAPI @quotableAPIWithTagsAndPagesParam
+Scenario Outline: Test_quotable_api_with_tags_pages_queryparams # src/test/resources/features/quotable_api.feature:63
+13:31:55.341 [pool-2-thread-1] INFO  i.c.core.plugin.SerenityReporter - Running feature from file:///C:/Users/hp-pc/git/quotable-Api/src/test/resources/features/quotable_api.feature
+13:31:55.341 [pool-2-thread-1] INFO   - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Test_quotable_api_with_tags_pages_queryparams(quotableapi---automation;test-quotable-api-with-tags-pages-queryparams)
+--------------------------------------------------------------------------------
+  Given the api is composed of "https://api.quotable.io/"       # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.the_api_is_composed_of(java.lang.String)
+  Given A call to quotable api with path as "quotes"            # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.a_call_to_quotable_api_with_path_as(java.lang.String)
+map size3
+  Then validate the api with following multiple queryparams     # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.validate_the_api_with_following_multiple_queryparams(io.cucumber.datatable.DataTable)
+  When response code is "200"                                   # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.response_code_is(java.lang.String)
+  Then validate the total count "187"                           # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.validate_the_total_count(java.lang.String)
+13:31:56.856 [pool-2-thread-1] INFO   - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Test quotable api with tags pages queryparams
+----------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="Test_quotable_api_with_tags_pages_author_queryparams" classname="QuotableAPI - Automation" time="1.582">
+    <system-out><![CDATA[
+@quotableAPI @quotableAPIWithTagsPagesAuthorParam
+Scenario Outline: Test_quotable_api_with_tags_pages_author_queryparams # src/test/resources/features/quotable_api.feature:78
+13:31:56.856 [pool-2-thread-1] INFO  i.c.core.plugin.SerenityReporter - Running feature from file:///C:/Users/hp-pc/git/quotable-Api/src/test/resources/features/quotable_api.feature
+13:31:56.872 [pool-2-thread-1] INFO   - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Test_quotable_api_with_tags_pages_author_queryparams(quotableapi---automation;test-quotable-api-with-tags-pages-author-queryparams)
+--------------------------------------------------------------------------------
+  Given the api is composed of "https://api.quotable.io/"              # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.the_api_is_composed_of(java.lang.String)
+  Given A call to quotable api with path as "quotes"                   # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.a_call_to_quotable_api_with_path_as(java.lang.String)
+map size4
+Request method:	GET
+Request URI:	https://api.quotable.io/quotes?tags=friendship&page=1&author=Mencius
+Proxy:			<none>
+Request params:	<none>
+Query params:	tags=friendship
+				page=1
+				author=Mencius
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+  Then validate the api with following multiple queryparams            # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.validate_the_api_with_following_multiple_queryparams(io.cucumber.datatable.DataTable)
+  When response code is "200"                                          # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.response_code_is(java.lang.String)
+  Then validate the total count "2"                                    # com.project.quotableapi.quotableapi.stepdef.QuotableStepDef.validate_the_total_count(java.lang.String)
+13:31:58.437 [pool-2-thread-1] INFO   - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Test quotable api with tags pages author queryparams
+----------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+</testsuite>
