@@ -4,13 +4,14 @@ package com.project.quotableapi.quotableapi;
 import static org.junit.Assert.assertEquals;
 
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import net.serenitybdd.core.Serenity;
 
 public class QuotableStepDef {
 	private Response response;
-
+	
 	@Given("^the api is composed of \"(.*?)\"$")
 	public void the_api_is_composed_of(String baseUri) throws Throwable {
 		RestAssured.baseURI = baseUri;
@@ -29,6 +30,13 @@ public class QuotableStepDef {
 	    // Write code here that turns the phrase above into concrete actions
 	    assertEquals(String.valueOf(response.getStatusCode()),expectedCode);
 	    Serenity.recordReportData().withTitle("ResonseCode").andContents(String.valueOf(response.getStatusCode()));
+	}
+	
+	@Then("^validate the \"([^\"]*)\"$")
+	public void validate_the(String pathParam) throws Throwable {
+		response = RestAssured.given()
+                .get(pathParam)
+                .then().extract().response();
 	}
 	
 }
