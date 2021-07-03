@@ -47,3 +47,17 @@ Go to your project directory from terminal and hit following commands
 
 Teamcity Run Report Screenshots
 -----------------------
+1. Project configured in teamcity
+![image](https://user-images.githubusercontent.com/11191193/124349247-d28ae100-dc0b-11eb-836c-71db2abb77d5.png)
+
+2. Test Run Overview
+![image](https://user-images.githubusercontent.com/11191193/124349329-17167c80-dc0c-11eb-9e43-6933a357e82d.png)
+
+3. Build Log Overview
+![image](https://user-images.githubusercontent.com/11191193/124349365-51801980-dc0c-11eb-83bf-d9798fe769f2.png)
+
+4. Report Overview
+![image](https://user-images.githubusercontent.com/11191193/124349431-91df9780-dc0c-11eb-9a99-6046e27bed9b.png)
+
+![image](https://user-images.githubusercontent.com/11191193/124349481-d3704280-dc0c-11eb-83e3-8a2faf399f84.png)
+
